@@ -1,0 +1,54 @@
+# Nome do seu workflow, aparecerá na aba "Actions" do GitHub
+name: Deploy Docs and Web to GitHub Pages
+
+# Gatilho: Este workflow roda sempre que houver um push na branch 'main'
+on:
+  push:
+    branches:
+      - main
+  # Permite que você rode este workflow manualmente também
+  workflow_dispatch:
+
+# Permissões para os jobs
+permissions:
+  contents: read
+
+jobs:
+  # --- JOB PARA PUBLICAR O SITE 'docs' ---
+  deploy-docs:
+    name: Deploy Docs to 'testedocs' repo
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. Checkout do código do monorepo
+        uses: actions/checkout@v4
+
+      - name: 2. Setup PNPM (ou npm/yarn) e Node.js
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9 # Use a versão do pnpm que desejar
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Use a versão do Node.js que desejar
+          cache: 'pnpm'
+
+      - name: 3. Instalar dependências
+        run: pnpm install
+
+      - name: 4. Buildar APENAS o aplicativo 'docs'
+        run: pnpm turbo build --filter=docs
+
+      - name: 5. Deploy para o repositório 'testedocs'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # O PAT que você criou e salvou nos secrets
+          personal_token: ${{ secrets.PAT_PARA_DEPLOY }}
+          # O repositório de destino
+          external_repository: Parau/testedocs
+          # A pasta que contém o resultado do build do 'docs'
+          publish_dir: ./apps/docs/out
+          # A branch no repositório de destino
+          publish_branch: gh-pages
+          # Informações do usuário que fará o commit (o bot)
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: "Deploy docs: ${{ github.event.head_commit.message }}"
