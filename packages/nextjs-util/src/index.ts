@@ -1,3 +1,3 @@
 export function meuTeste() {
-  return "Olás!";
+  return "Blz!";
 }
