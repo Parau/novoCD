@@ -1,5 +1,7 @@
 import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
+import { meuTeste } from "@repo/nextjs-util";
+import { pathWithBase } from './lib/pathWithBase';
 import styles from "./page.module.css";
 
 type Props = Omit<ImageProps, "src"> & {
@@ -24,13 +26,15 @@ export default function Home() {
       <main className={styles.main}>
         <ThemeImage
           className={styles.logo}
-          srcLight="/turborepo-dark.svg"
-          srcDark="/turborepo-light.svg"
+          srcLight={pathWithBase("/turborepo-dark.svg")}
+          srcDark="turborepo-light.svg"
           alt="Turborepo logo"
           width={180}
           height={38}
           priority
         />
+        {meuTeste()}
+        {pathWithBase("/")}
         <ol>
           <li>
             Get started by editing <code>apps/docs/app/page.tsx</code>
@@ -47,7 +51,7 @@ export default function Home() {
           >
             <Image
               className={styles.logo}
-              src="vercel.svg"
+              src={pathWithBase("/vercel.svg")}
               alt="Vercel logomark"
               width={20}
               height={20}
@@ -75,7 +79,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="window.svg"
+            src={pathWithBase("/window.svg")}
             alt="Window icon"
             width={16}
             height={16}
@@ -89,14 +93,17 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="globe.svg"
+            src={pathWithBase("/globe.svg")}
             alt="Globe icon"
             width={16}
             height={16}
           />
-          Go to turborepo.com YES →
+          Go to turborepo.com →
         </a>
       </footer>
     </div>
   );
 }
+
+// Exemplo de uso na carga de imagens:
+// <img src={pathWithBase('/images/exemplo.png')} alt="Exemplo" />

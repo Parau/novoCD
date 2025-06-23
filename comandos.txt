@@ -1,3 +1,0 @@
-neste projeto troquei o yarn pelo pnpm
-
-pnpm dev:docs
