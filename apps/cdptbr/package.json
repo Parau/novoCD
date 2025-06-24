@@ -11,8 +11,11 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
+    "@mantine/core": "8.0.1",
+    "@mantine/hooks": "8.0.1",
     "@repo/nextjs-util": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "@tabler/icons-react": "^3.34.0",
     "next": "^15.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
@@ -24,6 +27,9 @@
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
     "eslint": "^9.29.0",
+    "postcss": "^8.5.5",
+    "postcss-preset-mantine": "1.17.0",
+    "postcss-simple-vars": "^7.0.1",
     "typescript": "5.8.2"
   }
 }

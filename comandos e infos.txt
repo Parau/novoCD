@@ -1,0 +1,13 @@
+pnpm dev
+- para rodar tudo incluindo modificações nos packages
+
+pnpm add -D sass --filter cdptbr
+- Para instalar como dependencia de desenvolvimento somente no cdptbr
+
+pnpm remove sass --filter cdptbr
+- Para desinstalar como dependencia de desenvolvimento somente no cdptbr
+
+=== INFOS ===
+O visual studio code reclama da sintaxe do postCSS (@mixin) com o arquivo na extensão css, mas se eu mudar para scss eu tenho que incluir o SASS no projeto. Ao incluir o sass ele tenta resolver as variáveis que vem nos exemplos de código do Mantine, neste caso eu teria que alterar o local de definição destas variáveis (postcss.config.cjs) e colcoar em um lugar compativel com o sass. Por usar o mantine é provável que neste projeto eu não vou usar sass, então o que precisa fazer é desligar o aviso do visual studio code. Anotei aqui como fazer mas ainda não ativei com receio de perder outras infos importantes no css. O que deveria fazer é desligar isso, mas incluir e configurar um lint que consegue tratar apenas o @mixin ou outro critério para eu não perder infos importantes de erros no css.
+.vscode/settings.json
+"css.lint.unknownAtRules": "ignore"
