@@ -7,6 +7,7 @@ import {
   IconCoin,
   IconFingerprint,
   IconNotification,
+  IconLogout,
 } from '@tabler/icons-react';
 import {
   Anchor,
@@ -27,8 +28,23 @@ import {
   useMantineTheme,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { useRouter } from 'next/navigation';
 import { CriatividadeDigitalLogo } from './CriatividadeDigitalLogo';
 import classes from './HeaderCD.module.css';
+import { useAuth } from '../firebase/AuthContext'; 
+
+const LogoutButton = ({ onLogout }) => (
+  <Anchor
+    component="button"
+    type="button"
+    onClick={onLogout}
+    c="black"
+    style={{ display: "flex", alignItems: "center", padding: 0 }}
+  >
+    <IconLogout size={18} />
+  </Anchor>
+);
+
 
 const mockdata = [
   {
@@ -67,6 +83,8 @@ export function HeaderCD() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
   const theme = useMantineTheme();
+  const { user, logout } = useAuth();
+  const router = useRouter();
 
   const links = mockdata.map((item) => (
     <UnstyledButton className={classes.subLink} key={item.title}>
@@ -93,7 +111,7 @@ export function HeaderCD() {
           {/* <MantineLogo size={30} /> */}
           <CriatividadeDigitalLogo />
 
-            {/* 
+          {/* 
             <Group h="100%" gap={0} visibleFrom="sm">
             <a href="#" className={classes.link}>
               Home
@@ -149,11 +167,23 @@ export function HeaderCD() {
             */}
 
           <Group visibleFrom="sm">
-            <Button variant="default">Log in</Button>
-            <Button>Sign up</Button>
+            {!user ? (
+              <Button variant="default" onClick={() => router.push('/login')}>Log in</Button>
+            ) : (
+              <Group>
+                <Group gap={8} align="center">
+                  <Text>{user.email}</Text>
+                  <LogoutButton onLogout={logout} />
+                </Group>
+              </Group>
+            )}
           </Group>
 
-          <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
+          <Burger
+            opened={drawerOpened}
+            onClick={toggleDrawer}
+            hiddenFrom="sm"
+          />
         </Group>
       </header>
 
@@ -192,10 +222,15 @@ export function HeaderCD() {
           <Divider my="sm" />
           */}
 
-
           <Group justify="center" grow pb="xl" px="md">
-            <Button variant="default">Log in</Button>
-            <Button>Sign up</Button>
+            {!user ? (
+              <Button variant="default" onClick={() => router.push('/login')}>Log in</Button>
+            ) : (
+              <Group>
+                <Text>{user.email}</Text>
+                <LogoutButton onLogout={logout} />
+              </Group>
+            )}
           </Group>
         </ScrollArea>
       </Drawer>

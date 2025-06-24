@@ -3,6 +3,7 @@ import '@mantine/core/styles.css';
 import React from 'react';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider, Container } from '@mantine/core';
 import { theme } from './theme';
+import { AuthContextProvider } from '../firebase/AuthContext';
 
 export const metadata = {
   title: 'CRIATIVIDADE.digital',
@@ -21,11 +22,13 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>
-          <Container p="md">
-            {children}
-          </Container>
-        </MantineProvider>
+        <AuthContextProvider>
+          <MantineProvider theme={theme}>
+            <Container p="md">
+              {children}
+            </Container>
+          </MantineProvider>
+        </AuthContextProvider>
       </body>
     </html>
   );
