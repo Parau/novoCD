@@ -15,6 +15,8 @@ import {
 import { auth } from './config'; // Nossa configuração centralizada
 import { useRouter } from 'next/navigation'; // Importação correta para App Router
 import { showNotification } from '@mantine/notifications';
+import {pathWithBase} from '../lib/pathWithBase'; // Importa a função para lidar com o caminho base
+
 
 // Tipos
 type AuthProviderType = 'Google' | 'Microsoft' | 'Email';
@@ -70,16 +72,21 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
           break;
         case 'Email':
           if (!email) throw new Error('Email é obrigatório para este login.');
+          //console.log(`${window.location.origin}${pathWithBase("/loginlink")}`);
           const actionCodeSettings = {
-            url: `${window.location.origin}/loginlink`, // Redireciona para o dashboard após login
+            url: `${window.location.origin}${pathWithBase("/loginlink")}`, // Redireciona para o dashboard após login
             handleCodeInApp: true,
           };
+          //console.log('chamando sendSignInLinkToEmail com email:', email);
           await sendSignInLinkToEmail(auth, email, actionCodeSettings);
           window.localStorage.setItem('emailForSignIn', email);
+          console.log('localStorage.setItem');
           showNotification({
             title: 'Link de login enviado',
             message: `Um link de login foi enviado para ${email}. Verifique sua caixa de entrada.`,
             color: 'green',
+            autoClose: 20000,
+            position: 'top-right',  
           });
           break;
         default:
@@ -93,13 +100,26 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
               title: 'Problema de conexão',
               message: 'Por favor, verifique sua internet e tente novamente.',
               color: 'red',
+              autoClose: 10000,
+              position: 'top-right',  
             });
             break;
           case 'auth/admin-restricted-operation':
             showNotification({
               title: 'Acesso restrito',
-              message: 'Nenhuma licença do CRIATIVIDADE.digital foi encontrada para este e-mail.',
+              message: `Nenhuma licença do CRIATIVIDADE.digital foi encontrada para o e-mail ${email}.`,
               color: 'red',
+              autoClose: 10000,
+              position: 'top-right',  
+            });
+            break;
+          case 'auth/invalid-email':
+            showNotification({
+              title: 'Digite um e-mail válido',
+              message: `${email} não é um e-mail válido.`,
+              color: 'red',
+              autoClose: 10000,
+              position: 'top-right',  
             });
             break;
           case 'auth/popup-blocked':
@@ -107,6 +127,8 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
               title: 'Janela de login bloqueada',
               message: 'O navegador bloqueou a janela de login. Por favor, ajuste as configurações do navegador para permitir a abertura de janelas pop-up para fazer o login.',
               color: 'red',
+              autoClose: 10000,
+              position: 'top-right',  
             });
             break;
           default:

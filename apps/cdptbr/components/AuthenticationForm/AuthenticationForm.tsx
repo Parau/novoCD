@@ -1,14 +1,9 @@
 "use client";
 import React, { useState } from 'react';
 import {
-  Anchor,
-  Button,
-  Checkbox,
   Divider,
-  Group,
   Paper,
   PaperProps,
-  PasswordInput,
   Stack,
   Text,
   TextInput,
@@ -16,6 +11,7 @@ import {
 import { GoogleButton } from './GoogleButton';
 import { MicrosoftButton } from './MicrosoftButton';
 import { EmailButton } from './EmailButton';
+import Link from 'next/link';
 
 export interface AuthenticationFormProps extends PaperProps {
   handleLogin: (type: 'Google' | 'Microsoft' | 'Email', email?: string) => void;
@@ -44,17 +40,31 @@ export function AuthenticationForm({ handleLogin, ...props }: AuthenticationForm
   };
 
   return (
-    <Paper radius="md" p="xl" withBorder style={{ maxWidth: 400, margin: 'auto' }} {...props}>
+    <Paper
+      radius="md"
+      p="xl"
+      withBorder
+      style={{ maxWidth: 400, margin: "auto" }}
+      {...props}
+    >
       <Text size="lg" fw={500}>
-        Bem-vindo a sua CRIATIVIDADE.digital. Primeiro, faça o seu login:
+        Faça login na sua conta:
       </Text>
 
       <Stack mb="md" mt="md">
-        <GoogleButton radius="xl" onClick={handleGoogleClick}>Google</GoogleButton>
-        <MicrosoftButton radius="xl" onClick={handleMicrosoftClick}>Microsoft</MicrosoftButton>
+        <GoogleButton radius="xl" onClick={handleGoogleClick}>
+          Google
+        </GoogleButton>
+        <MicrosoftButton radius="xl" onClick={handleMicrosoftClick}>
+          Microsoft
+        </MicrosoftButton>
       </Stack>
 
-      <Divider label='Se a sua autenticação for do tipo "email link"' labelPosition="center" my="lg" />
+      <Divider
+        label='Se a sua autenticação for do tipo "email link"'
+        labelPosition="center"
+        my="lg"
+      />
 
       <Stack>
         <TextInput
@@ -65,8 +75,23 @@ export function AuthenticationForm({ handleLogin, ...props }: AuthenticationForm
           value={email}
           onChange={(event) => setEmail(event.currentTarget.value)}
         />
-        <EmailButton radius="xl" onClick={handleEmailClick}>Login com email</EmailButton>
+        <EmailButton radius="xl" onClick={handleEmailClick}>
+          Login com email
+        </EmailButton>
       </Stack>
+
+      <Divider my="lg" />
+      <Link href="/">
+        <Text
+          c="dimmed"
+          size="sm"
+          ta="center"
+          mt="md"
+          style={{ cursor: "pointer" }}
+        >
+          Voltar para a página inicial.
+        </Text>
+      </Link>
     </Paper>
   );
 }

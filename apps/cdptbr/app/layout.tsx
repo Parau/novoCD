@@ -1,9 +1,9 @@
 import '@mantine/core/styles.css';
-
+import '@mantine/notifications/styles.css';
 import React from 'react';
-import { ColorSchemeScript, mantineHtmlProps, MantineProvider, Container } from '@mantine/core';
-import { theme } from './theme';
-import { AuthContextProvider } from '../firebase/AuthContext';
+import { ColorSchemeScript, mantineHtmlProps, Container } from '@mantine/core';
+import { Providers } from './providers';
+
 
 export const metadata = {
   title: 'CRIATIVIDADE.digital',
@@ -13,6 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: any }) {
   return (
     <html lang="pt" {...mantineHtmlProps}>
+      
       <head>
         <ColorSchemeScript />
         <link rel="shortcut icon" href="/favicon.svg" />
@@ -22,13 +23,11 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <AuthContextProvider>
-          <MantineProvider theme={theme}>
+        <Providers>
             <Container p="md">
               {children}
             </Container>
-          </MantineProvider>
-        </AuthContextProvider>
+        </Providers>
       </body>
     </html>
   );
