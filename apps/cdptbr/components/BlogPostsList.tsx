@@ -5,20 +5,20 @@ const mockdata = [
   {
     id: 1,
     title: 'Feliz Dia Nacional do Livro Infantil',
-    image: 'https://criatividade.digital/blog/dnli/feliz-dia-nacional-livro-infantil.jpg',
+    image: 'https://blog.criatividade.digital/blog/dnli/feliz-dia-nacional-livro-infantil.jpg',
     category: 'Alfabetização',
     excerpt: 'Para comemorar, preparamos um presente especial para você enviar a quem quiser!',
     date: '17 de Abril, 2025',
-    link: 'https://criatividade.digital/blog/dnli/feliz-dia-nacional-do-livro-infantil/',
+    link: 'https://blog.criatividade.digital/blog/dnli/feliz-dia-nacional-do-livro-infantil/',
   },
   {
     id: 2,
     title: 'IA nas organizações: Estamos Desenvolvendo Mentes ou Treinando Seguidores de Prompts?',
-    image: 'https://criatividade.digital/blog/L&D/bem-vindo-2025/thumb.jpg',
+    image: 'https://blog.criatividade.digital/blog/L&D/bem-vindo-2025/thumb.jpg',
     category: 'IA',
     excerpt: 'Após dois anos de IA generativa, o que aprendemos sobre seu impacto no desenvolvimento humano?',
     date: '5 de Março, 2025',
-    link: 'https://criatividade.digital/blog/ld/bem-vindo-2025/',
+    link: 'https://blog.criatividade.digital/blog/ld/bem-vindo-2025/',
   },
   // ... adicione mais posts aqui
 ];

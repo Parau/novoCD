@@ -44,13 +44,13 @@ jobs:
       - name: 4. Buildar APENAS o aplicativo 'cdptbr'
         run: pnpm turbo build --filter=cdptbr
 
-      - name: 5. Deploy para o repositório 'testedocs'
+      - name: 5. Deploy para o repositório 'parau.github.io'
         uses: peaceiris/actions-gh-pages@v4
         with:
           # O PAT que você criou e salvou nos secrets
           personal_token: ${{ secrets.PAT_PARA_DEPLOY }}
           # O repositório de destino
-          external_repository: Parau/testedocs
+          external_repository: Parau/parau.github.io
           # A pasta que contém o resultado do build do 'cdptbr'
           publish_dir: ./apps/cdptbr/out
           # A branch no repositório de destino
