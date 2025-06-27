@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: any }) {
       </head>
       <body>
         <Providers>
-            <Container p="md">
+            <Container p="md" pt={0}>
               {children}
             </Container>
         </Providers>

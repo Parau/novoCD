@@ -6,7 +6,7 @@ import { showNotification } from '@mantine/notifications';
 import { Center, Text, Loader } from '@mantine/core';
 import { auth  } from '../../firebase/config';
 
-const LoginLinkPage = () => {
+export default const LoginLinkPage = () => {
   const router = useRouter();
 
   useEffect(() => {
@@ -55,4 +55,3 @@ const LoginLinkPage = () => {
   );
 };
 
-export default LoginLinkPage;
