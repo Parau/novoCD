@@ -28,7 +28,7 @@ export function GuidesNTools() {
 
   const items = mockdata.map((item) => (
     <UnstyledButton component="a" key={item.title} href={item.link} target={item.target} className={classes.item}>
-      <item.icon color={theme.colors[item.color][6]} size={32} />
+      <item.icon color={(theme.colors[item.color]?.[6]) ?? '#f8f9fa'} />
       <Text size="xs" mt={7}>
         {item.title}
       </Text>
