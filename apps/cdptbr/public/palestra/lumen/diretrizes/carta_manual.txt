@@ -1,0 +1,50 @@
+**Diretrizes de Uso de Inteligência Artificial (IA) na Escola**
+
+**1. Introdução**
+
+A Escola [Nome da Escola] reconhece o potencial da Inteligência Artificial (IA) para melhorar a aprendizagem e o ensino, e para promover a inovação educacional. Esta política estabelece as diretrizes e regras para o uso responsável e ético da IA por alunos e professores dentro da escola.
+
+**2. Objetivos**
+
+- Promover o uso ético e responsável da IA para aprimorar a educação.
+- Estabelecer diretrizes claras para o uso da IA por alunos e professores.
+- Proteger a privacidade e os direitos dos alunos e professores.
+
+**3. Princípios**
+
+A Escola [Nome da Escola] baseia suas diretrizes de uso de IA nos seguintes princípios:
+
+- Transparência: As decisões tomadas com o auxílio da IA devem ser compreensíveis e explicáveis.
+- Responsabilidade: A escola e os usuários da IA são responsáveis pelas ações realizadas com seu uso.
+- Privacidade: A privacidade dos alunos e professores deve ser protegida em conformidade com as leis e regulamentos aplicáveis.
+- Segurança: Deve ser garantido que a IA seja segura e não represente riscos para os usuários.
+- Equidade: O uso da IA deve ser equitativo e não discriminatório.
+
+**4. Informação e Consentimento dos Pais**
+- Os pais são informados sobre o uso da IA e devem consentir com o uso de ferramentas de IA. 
+- As políticas de coleta de dados são regidas pelas políticas das respectivas ferramentas.
+
+**5. Uso da IA por Alunos**
+
+- Os alunos podem usar a IA para auxiliar em suas atividades escolares, desde que não violem as políticas da escola ou as leis aplicáveis. As políticas específicas relacionadas ao uso da IA pelos alunos podem ser encontradas no [Manual do Aluno] da Escola [Nome da Escola].
+
+- Os alunos são incentivados a entender como a IA funciona e a questionar suas decisões.
+
+**6. Uso da IA por Professores**
+
+- Os professores podem usar a IA como uma ferramenta educacional para melhorar a experiência de ensino e aprendizagem.
+- Os professores devem garantir que a IA seja usada de forma ética e responsável, promovendo a igualdade de oportunidades para todos os alunos.
+
+**7. Responsabilidades da Escola**
+
+- A escola deve garantir que o uso da IA esteja em conformidade com as políticas estabelecidas.
+- A escola deve fornecer capacitação adequada sobre o uso ético da IA para alunos e professores.
+
+**8. Proteção de Dados**
+
+- A escola deve garantir que os dados dos alunos e professores sejam protegidos de acordo com as leis e regulamentos aplicáveis.
+- A escola deve obter consentimento dos pais ou responsáveis legais antes de coletar, usar ou divulgar dados pessoais dos alunos.
+
+**9. Revisão e Atualização**
+
+Esta política será revisada periodicamente para garantir sua eficácia e relevância. Alterações serão comunicadas a todos os interessados.

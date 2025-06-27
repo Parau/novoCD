@@ -1,0 +1,31 @@
+**Plano de Aula**
+
+- **Disciplina:** Ciências
+- **Série:** 3º ano
+- **Conteúdo:** Sistema Respiratório
+- **Objetivo da Atividade:** 
+  - Revisar e aprofundar o conhecimento sobre o sistema respiratório.
+  - Estimular a cooperação e a interação entre os alunos.
+  - Reforçar a aprendizagem por meio de um questionário interativo.
+- **Materiais:** 
+  - Quiz ou Kahoot sobre o sistema respiratório.
+  - Recursos visuais (imagens, diagramas) para auxiliar na compreensão.
+- **Duração:** Duas aulas (aproximadamente 50 minutos cada).
+- **Passo a Passo da Atividade:**
+  1. **Introdução (10 minutos):** Iniciar a aula com uma breve revisão sobre o sistema respiratório, destacando sua importância para o corpo humano.
+  2. **Divisão em Trios (5 minutos):** Dividir a turma em trios, incentivando a formação de grupos heterogêneos para favorecer a troca de conhecimentos.
+  3. **Quiz Interativo (30 minutos):** Apresentar o quiz sobre o sistema respiratório, utilizando a ferramenta escolhida (Quiz ou Kahoot). Os alunos terão que responder perguntas sobre o tema de forma colaborativa, discutindo e chegando a um consenso.
+  4. **Discussão em Grupo (10 minutos):** Após o quiz, promover uma conversa em grupo para discutir as respostas, esclarecer dúvidas e reforçar os conceitos abordados.
+  5. **Conclusão (5 minutos):** Encerrar a aula destacando os pontos principais revisados e incentivando os alunos a continuarem explorando o tema em casa.
+- **Avaliação:**
+  - **Processo Avaliativo:** Observação da participação dos alunos durante a atividade, capacidade de trabalho em equipe e compreensão dos conceitos abordados.
+  - **Rubricas:**
+  
+    | Critérios                | Descrição                                                               | Pontuação |
+    |--------------------------|-------------------------------------------------------------------------|-----------|
+    | Participação em Grupo    | Contribuição para o trabalho em equipe, colaboração e respeito mútuo    | 0-5       |
+    | Respostas no Quiz        | Precisão e fundamentação das respostas                                 | 0-10      |
+    | Compreensão do Conteúdo  | Demonstração de entendimento dos conceitos do sistema respiratório      | 0-10      |
+    | Total                    |                                                                         | 0-25      |
+
+Espero que este plano de aula atenda às suas expectativas!

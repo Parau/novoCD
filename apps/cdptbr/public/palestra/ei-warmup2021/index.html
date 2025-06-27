@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Introdução à lógica de programação</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Atividade apresentada durante o Warm Up Embaixadores da Inovação - 17/10/2020.">
+    <meta name="author" content="CRIATIVIDADE.digital">    
+    <link rel="shortcut icon" href="../assets/favicon.png"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="../assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/theme.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64612385-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-64612385-1');
+		</script>
+		<!-- Facebook Pixel Code -->
+		<script>
+			!function(f,b,e,v,n,t,s)
+			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t,s)}(window, document,'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '1593045684179127');
+			fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=1593045684179127&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+						<div class="container-fluid position-relative py-2">
+							<div class="docs-logo-wrapper">
+								<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+								<div class="site-logo"><a class="navbar-brand" href="/"><i class="far fa-lightbulb"></i><span
+											class="logo-text">&nbsp;&nbsp;<span class="text-alt"> CRIATIVIDADE.</span>digital</span></a></div>
+							</div>
+							<!--//docs-logo-wrapper-->
+							<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+								<div class="top-search-box d-none d-lg-flex">
+									<!--<form class="search-form">
+										            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+										            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+										        </form>-->
+								</div>
+								<!--
+								<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+									<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+								</ul>
+								-->
+								<!--//social-list-->
+								<!--
+									<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-4-documentation-template-for-software-projects/"
+									class="btn btn-primary d-none d-lg-flex">Download</a>
+								-->
+							</div>
+							<!--//docs-top-utilities-->
+						</div>
+						<!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+						<li class="nav-item section-title"><a class="nav-link scrollto active" href="#Introducao"><span class="theme-icon-holder mr-2"><i class="fas fa-home"></i></span>Apresentação</a></li>
+						<li class="nav-item section-title"><a class="nav-link scrollto active" href="#conhecendo"><span class="theme-icon-holder mr-2">1️⃣</span>Conhecendo</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#sanduiche">Pão com geleia</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#robo">Você é o robô</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#programador">Você é o programador</a></li>
+						<li class="nav-item section-title"><a class="nav-link scrollto active" href="#explorando"><span class="theme-icon-holder mr-2">2️⃣</span>Explorando</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#labirinto">Labirinto</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#danca">Hora da dança</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#combate">Linhas de código</a></li>
+						<li class="nav-item section-title"><a class="nav-link scrollto active" href="#ev3"><span class="theme-icon-holder mr-2">3️⃣</span>Simulador EV3</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#ev3-01">Atividade 01</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#ev3-02">Atividade 02</a></li>
+					</ul>
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+			<style>
+				.thumb {float: right; width: 45%;}
+				@media only screen and (max-width: 520px) {
+					.txt {font-size: 22px;}
+					.thumb {float: right; width: 100%}
+				}
+				</style>
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="Introducao">
+						<header class="docs-header">
+
+							<h1 class="docs-heading">Apresentação<span class="docs-time">Última atualização: 24/02/2021</span></h1>
+
+							<section class="docs-intro">
+								<a href="https://aprender.digital/"><img class="thumb" src="./o-nome-da-gente.gif" align="rigth"></a>
+								<p>Atividade de <b>Introdução à lógica de programação</b> apresentada durante o WARM UP EMBAIXADORES DA INOVAÇÃO (24/02/2021).
+									Aqui você encontra o links para as atividades utilizadas durante a apresentação online.</p>
+									<br /><br />
+									<div class="callout-block callout-block-info">
+										<div class="content">
+												<h4 class="callout-title">
+													<span class="callout-icon-holder mr-1">
+														<svg class="svg-inline--fa fa-info-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg><!-- <i class="fas fa-info-circle"></i> Font Awesome fontawesome.com -->
+												</span><!--//icon-holder-->
+													CRIATIVIDADE.digital
+											</h4>
+												<p>Acompanhe as nossas novidades seguindo a nossa <a href="https://www.facebook.com/ACriatividadeDigital/" target = "_blank">página no FACEBOOK!!! 😍</a></p>
+										</div><!--//content-->
+								</div>
+									<div class="alert alert-success" role="alert">
+										<i class="fab fa-whatsapp"></i> Durante a atividade utilizaremos <a href="https://chat.whatsapp.com/GeueDX6VLOuKpzjhEt6nba" target = "_blank"> este grupo no WhatsApp</a>!!!<br>Ao final da atividade o grupo será apagado.
+									</div>
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VAc9CyBHwBU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+							</section>
+							<!--//docs-intro-->
+						</header>
+			    </article>
+
+					<article class="docs-article" id="conhecendo">
+						<header class="docs-header">
+							<h1 class="docs-heading">Conhecendo</h1>
+							<section class="docs-intro">
+								<p>Mas como é que funciona esta tal de "PROGRAMAÇÃO"?</p>
+							</section>
+							<!--//docs-intro-->
+						</header>
+						<section class="docs-section" id="sanduiche">
+							<h2 class="section-heading">Pão com geleia</h2>
+							<p>Para quem gosta do tradicional, pão com geleia é a sugestão perfeita para o café da manhã. Vamos ver o que um pão com geleia pode nos ensinar sobre programação??!!</p>
+							<p><small>Esta atividade foi construída usando como referência a proposta do professor <a href="http://code-it.co.uk/unplugged/jamsandwich" target="_blank">Phil Bagge</a>.</small></p>
+						</section>
+						<!--//section-->
+					
+						<section class="docs-section" id="robo">
+							<h2 class="section-heading">Você é o robô</h2>
+							<p>
+								Agora é a <b>sua</b> vez de ser o robô!<br>
+								Use est link para acessar o <a href="http://compute-it.toxicode.fr/?hour-of-code" target="_blank">COMPUTE IT</a>.
+							</p>
+						</section>
+
+						<section class="docs-section" id="programador">
+							<h2 class="section-heading">Você é o programador</h2>
+							<p>
+								Agora é a <b>sua</b> vez de PROGRAMAR! Eu preciso de ajuda para navegar pelo labirinto.<br>
+								Use est link para acessar o <a href="./blockly/" target="_blank">blocos de programação</a>.
+							</p>
+						</section>
+
+						<!--//section-->
+
+			    </article><!--//docs-article-->
+
+					<article class="docs-article" id="explorando">
+						<header class="docs-header">
+							<h1 class="docs-heading">Explorando</h1>
+							<section class="docs-intro">
+								<p>Vamos explorar vários tipos de programas!!!</p>
+							</section>
+							<!--//docs-intro-->
+						</header>
+						<section class="docs-section" id="labirinto">
+							<h2 class="section-heading">Labirinto</h2>
+							<p>Resolva os vários desafios do jogo <b><a href="https://blockly.games/maze?lang=pt-br&level=1&skin=0" target="_blank">Labirinto com Blockly</a></b>. 
+								Não se preocupe se não der tempo de completar toda a lista. </p>
+								<div class="callout-block callout-block-danger mr-1">
+									<div class="content">
+											<h4 class="callout-title">
+												<span class="callout-icon-holder">
+													<svg class="svg-inline--fa fa-exclamation-triangle fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exclamation-triangle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path></svg><!-- <i class="fas fa-exclamation-triangle"></i> Font Awesome fontawesome.com -->
+											</span><!--//icon-holder-->
+												ATENÇÃO!
+										</h4>
+											<p>O nível 10 é um <b>super</b> desafio. Deixe guardado para resolvê-lo quando você estiver mais avançado nos conceitos de lógica de programação!</p>
+									</div><!--//content-->
+							</div>
+						</section>
+						<!--//section-->
+					
+						<section class="docs-section" id="danca">
+							<h2 class="section-heading">Hora da dança</h2>
+							<p>
+								Está na hora de <i>sacudir</i> o esqueleto!!! 🤣. Vamos nos divertir um pouco com a programação da <b><a href="https://studio.code.org/s/dance-2019/stage/1/puzzle/1" target="_blank">Festa Dançante</a></b>!! 
+							</p>
+							<p>Pode pular os vídeos e ir direto para a ação!!! Recomendo que você selecione o idioma <b>Português (Portugal)</b> para evitar alguns bugs do tutorial!!</p>
+						</section>
+
+						<section class="docs-section" id="combate">
+							<h2 class="section-heading">Linhas de códigos</h2>
+							<p>
+								Vamos experimentar programar usando linhas de código no lugar dos blocos. Então... Ao <b><a href="https://hourofcode.com/cocom" target="_blank">combate</a></b>.
+							</p>
+						</section>
+
+						<!--//section-->
+
+			    </article><!--//docs-article-->
+
+					<article class="docs-article" id="ev3">
+						<header class="docs-header">
+							<h1 class="docs-heading">Simulador EV3</h1>
+							<section class="docs-intro">
+								<p>Para esta atividade vamos usar o <b><a href="https://lab.open-roberta.org/" target="_blank">Open Roberta Lab</a></b> mantido pelo Fraunhofer IAIS (Institute for Intelligent Analysis and Information Systems). 
+									Ele disponibiliza um simulador de EV3 com motor, sensor de cor e distância.</p>
+							</section>
+							<!--//docs-intro-->
+						</header>
+
+						<section class="docs-section" id="ev3-01">
+							<h2 class="section-heading">Atividade 01</h2>
+							<p>Usando o [Acção] <spam class="b-eventos">mover para [a frente] | velocidade | distancia</spam> faça o robô chegar até a marca vermelha.</p>
+						</section>
+
+						<section class="docs-section" id="ev3-02">
+							<h2 class="section-heading">Atividade 02</h2>
+							<p>Usando o [Acção] <spam class="b-eventos">mover para [a frente] | velocidade </spam> e o [Controlo] <spam class="b-eventos">espera até | sensor de cor  | Port 3</spam> faça o robô chegar até a marca vermelha.</p>
+						</section>
+
+						<!--//section-->
+					
+
+			    </article><!--//docs-article-->
+
+
+					<footer class="footer">
+						<div class="container text-center py-5">
+							<small class="copyright">Copyright &copy; CRIATIVIDADE.digital – Template by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
+							<ul class="social-list list-unstyled pt-4 mb-0">
+								<!--<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>-->
+								<li class="list-inline-item"><a href="https://www.facebook.com/ACriatividadeDigital/" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+								<!--<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>-->
+							</ul>
+							<!--//social-list-->
+						</div>
+					</footer>
+							</div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="../assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="../assets/plugins/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="../assets/js/highlight-custom.js"></script> 
+    <script src="../assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="../assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="../assets/js/docs.js"></script> 
+
+</body>
+</html> 
+

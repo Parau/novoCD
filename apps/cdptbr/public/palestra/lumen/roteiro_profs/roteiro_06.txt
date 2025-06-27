@@ -1,0 +1,45 @@
+### Plano de Aula
+
+- **Disciplina:** Educação para o consumo
+- **Série:** 5º ano
+- **Conteúdo:** Fake news
+- **Duração:** 1 aula
+- **Ferramenta:** Chat GPT
+
+#### Objetivo da Atividade
+O objetivo desta atividade é simular o funcionamento de uma agência de notícias, destacando a importância da verificação da veracidade das informações.
+
+#### Materiais
+- Quadro branco ou papel para anotações
+- Computador ou dispositivo com acesso à internet para utilizar o Chat GPT
+
+#### Passo a Passo da Atividade
+1. **Introdução (10 minutos):**
+   - Apresente o tema "fake news" e explique a importância de verificar a veracidade das informações.
+   - Discuta com os alunos sobre o papel das agências de notícias na divulgação de informações confiáveis.
+
+2. **Organização da Agência de Notícias (15 minutos):**
+   - Divida a turma em grupos e distribua as funções de cada setor da agência (redação, edição, checagem de fatos, etc.).
+   - Peça para os grupos discutirem e detalharem o funcionamento de cada setor, definindo as responsabilidades de cada um.
+
+3. **Simulação da Agência de Notícias (25 minutos):**
+   - Cada grupo simulará o trabalho de sua área, produzindo uma notícia fictícia e passando-a pelo processo de verificação e edição.
+   - Os grupos devem apresentar o resultado final ao restante da turma.
+
+4. **Discussão e Conclusão (10 minutos):**
+   - Após as apresentações, promova uma discussão sobre os desafios encontrados na verificação da veracidade das notícias.
+   - Reforce a importância de buscar informações em fontes confiáveis e de não compartilhar notícias sem checar sua veracidade.
+
+#### Avaliação
+Para avaliar o desempenho dos alunos nesta atividade, será utilizada uma tabela de rubricas com os seguintes critérios:
+
+| Critérios                                 | Pontuação |
+|-------------------------------------------|-----------|
+| Participação e colaboração em grupo       | 0-5 pontos|
+| Clareza na apresentação do processo       | 0-5 pontos|
+| Veracidade da notícia produzida           | 0-5 pontos|
+| Eficiência na verificação de fatos        | 0-5 pontos|
+| Reflexão sobre a importância da verificação| 0-5 pontos|
+
+Total: 0-25 pontos
+

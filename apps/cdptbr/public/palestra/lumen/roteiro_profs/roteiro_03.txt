@@ -1,0 +1,56 @@
+### Plano de Aula
+
+- **Disciplina:** Ciências
+- **Série:** 7º ano
+- **Conteúdo:** Classificação dos Seres Vivos
+- **Objetivo da Atividade:** Identificar potenciais sinergias entre características de diferentes filos para criar novas espécies fictícias.
+- **Materiais:** Computadores com acesso à internet, projetor, DALL-E, papel e caneta para anotações.
+- **Duração:** 1 aula (50 minutos)
+
+#### Passo a Passo da Atividade:
+
+1. **Introdução (5 minutos):**
+   - Apresentação do tema: Classificação dos Seres Vivos.
+   - Explicação da atividade: Os alunos usarão o DALL-E para criar imagens de novas espécies fictícias, combinando características de dois filos distintos.
+
+2. **Divisão em Grupos (5 minutos):**
+   - Os alunos serão divididos em grupos de até três pessoas.
+
+3. **Instruções (10 minutos):**
+   - Explicação detalhada da dinâmica da atividade.
+   - Orientações sobre a criação das criaturas fantásticas: pensar em características físicas, adaptações especiais para sobreviver em um ambiente específico e combinações interessantes entre dois filos distintos.
+
+4. **Exemplos de Prompts do DALL-E (5 minutos):**
+   - Apresentação de exemplos de prompts do DALL-E para ajudar os alunos a estruturar suas ideias.
+
+5. **Criação das Criaturas (20 minutos):**
+   - Os grupos terão 20 minutos para discutir e criar suas criaturas fantásticas, anotando suas características e adaptabilidades.
+
+6. **Uso do DALL-E (10 minutos):**
+   - Cada grupo poderá usar o DALL-E no máximo três vezes para gerar uma imagem de sua criatura.
+
+7. **Apresentação das Criaturas (10 minutos):**
+   - Cada grupo apresentará sua nova espécie para a turma, explicando suas características e adaptabilidades.
+   - Destacar visualmente as características especiais da nova criatura na imagem gerada pelo DALL-E.
+
+#### Avaliação:
+
+- **Processo Avaliativo:** A avaliação será realizada considerando a criatividade na criação das novas espécies, a identificação das características e adaptabilidades das criaturas, e a capacidade de explicar suas escolhas de forma coerente.
+  
+- **Rubricas:**
+  
+  | Critério            | Descrição                                                                                                                |
+  |---------------------|--------------------------------------------------------------------------------------------------------------------------|
+  | Criatividade        | Capacidade de criar uma nova espécie fictícia com características únicas e interessantes.                                |
+  | Identificação       | Habilidade de identificar e explicar as características e adaptabilidades da nova criatura.                              |
+  | Coerência           | Coerência na escolha das características da nova espécie, demonstrando compreensão dos conceitos de classificação dos seres vivos. |
+  | Apresentação Visual | Qualidade da apresentação visual da nova criatura, destacando visualmente suas características especiais.                |
+
+#### Materiais:
+
+- Computadores com acesso à internet
+- Projetor
+- DALL-E
+- Papel e caneta para anotações
+
+Ao final da aula, os alunos deverão ter desenvolvido habilidades de análise e síntese, além de terem explorado de forma criativa os conceitos de classificação dos seres vivos.

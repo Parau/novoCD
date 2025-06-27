@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Como a IA funciona?</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Sugestões de ferramentas para explorar o conceito de Inteligência Artificial com seus alunos.">
+    <meta name="author" content="CRIATIVIDADE.digital">    
+    <link rel="shortcut icon" href="assets/favicon.png"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+		<link rel="stylesheet" href="assets/css/codebox.css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64612385-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-64612385-1');
+		</script>
+		<!-- Facebook Pixel Code -->
+		<script>
+			!function(f,b,e,v,n,t,s)
+			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t,s)}(window, document,'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '1593045684179127');
+			fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=1593045684179127&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+						<div class="container-fluid position-relative py-2">
+							<div class="docs-logo-wrapper">
+								<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+								<div class="site-logo"><a class="navbar-brand" href="/palestra/lumen/"><i class="far fa-lightbulb"></i><span
+											class="logo-text">&nbsp;&nbsp;<span class="text-alt"> CRIATIVIDADE.</span>digital</span></a></div>
+							</div>
+							<!--//docs-logo-wrapper-->
+							<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+								<div class="top-search-box d-none d-lg-flex">
+									<!--<form class="search-form">
+										            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+										            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+										        </form>-->
+								</div>
+								<!--
+								<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+									<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+								</ul>
+								-->
+								<!--//social-list-->
+								<!--
+									<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-4-documentation-template-for-software-projects/"
+									class="btn btn-primary d-none d-lg-flex">Download</a>
+								-->
+							</div>
+							<!--//docs-top-utilities-->
+						</div>
+						<!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+						<li class="nav-item section-title"><a class="nav-link scrollto active" href="#Introducao"><span class="theme-icon-holder mr-2"><i class="fas fa-home"></i></span>Oficina - Planos de aula</a></li>
+						<li class="nav-item section-title"><a class="nav-link scrollto active" href="#ideacao"><span class="theme-icon-holder mr-2">1️⃣</span>Ideação</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#lp">Primeira rodada</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#cie1">Segunda rodada</a></li>
+
+						<li class="nav-item section-title"><a class="nav-link scrollto active" href="#rascunho"><span class="theme-icon-holder mr-2">2️⃣</span>Rascunho Plano de Aula</a></li>				    
+				    <li class="nav-item"><a class="nav-link scrollto" href="#formulario">Formulário envio</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#prompts">Prompts para geração do plano</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#lista">Lista de projetos gerados</a></li>
+
+
+						<li class="nav-item section-title"><a class="nav-link scrollto active" href="#ef2"><span class="theme-icon-holder mr-2">3️⃣</span>Reflexões IA</a></li>
+
+					</ul>
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+			<style>
+				.thumb {float: right; width: 45%;}
+				@media only screen and (max-width: 520px) {
+					.txt {font-size: 22px;}
+					.thumb {float: right; width: 100%}
+				}
+				</style>
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="Introducao">
+						<header class="docs-header">
+
+							<h1 class="docs-heading">Incorporando a IA em seu plano de aula.<span class="docs-time">Última atualização: 16/04/2024</span></h1>
+							<section class="docs-intro">
+								
+								<p>
+									Nesta página, apresentamos os materiais utilizados durante a oficina.
+								</p>
+							</section>
+							<!--//docs-intro-->
+						</header>
+			    </article>
+
+					<article class="docs-article" id="ideacao">
+						<header class="docs-header">
+							<h1 class="docs-heading">Processo de ideação</i></h1>
+							<section class="docs-intro">
+								<p>Os participantes foram divididos em grupos e tiveram um tempo limitado para gerar ideias antes de se moverem para outro grupo, onde contribuíram com mais ideias.</p>
+							</section>
+							<!--//docs-intro-->
+						</header>
+						<section class="docs-section" id="lp">
+							<h2 class="section-heading">Primeira rodada</h2>
+							<p>A proposta é gerar e compartilhar a maior quantidade de ideias possível dentro do espaço de tempo estabelecido, registrando apenas um breve descritivo da proposta. Abaixo, alguns exemplos para você usar como base.</p>
+							<h3>Exemplo #1</h3>
+							<p>
+								<b>Disciplina:</b> Língua Portuguesa <br />
+								<b>Série:</b> 4o ano<br />
+								<b>Conteúdo:</b> Gênero textual Fábula<br />
+								<b>Duração:</b></Dura> 1 aula<br />
+								<b>Ferramenta:</b> ChatGPT<br />
+								<b>Breve resumo da atividade:</b><br /> Prompt que conduz o aluno passo a passo para construçao de uma fábula.<br />
+							</p>		
+							<p>
+							<h3>Exemplo #2</h3>
+								<b>Disciplina:</b> Ciências<br />
+								<b>Série:</b> 7o ano<br />
+								<b></b>Conteúdo: Classificação dos Seres Vivos (Aula 1)<br />
+								<b>Duração:</b> 1 aula<br />
+								<b>Ferramenta:</b> --- <br />
+								<b>Breve resumo da atividade:</b> Nesta aula, introduziremos a classificação dos seres vivos. Os alunos aprenderão a importância dessa classificação, suas categorias e as características dos animais em cada uma delas. Com base em seus interesses (por exemplo, futebol, RPG, videogames, bicicletas ou Pokémon), eles serão solicitados a refletir e discutir como a atividade escolhida é classificada, como essa classificação pode facilitar a comunicação e como pode torná-la mais eficiente.<br />
+							</p>
+							<h3>Exemplo #3</h3>
+							<p>
+								<b>Disciplina:</b> Ciências<br />
+								<b>Série:</b> 7o ano<br />
+								<b></b>Conteúdo: Classificação dos Seres Vivos (Aula 2)<br />
+								<b>Duração:</b> 1 aula<br />
+								<b>Ferramenta:</b> DALL-E<br />
+								<b>Breve resumo da atividade:</b> Os alunos usarão o DALL-E para criar imagens de novas espécies fictícias, combinando características de dois filos distintos. O objetivo é identificar potenciais sinergias que superem as limitações de um filo e aprimorem as habilidades do outro. Na imagem gerada, eles deverão destacar as características especiais dessa nova criatura, mostrando visualmente como ela se encaixa na classificação proposta.<br />
+							</p>
+						</section>
+						<!--//section-->
+						<section class="docs-section" id="cie1">
+							<h2 class="section-heading">Segunda rodada</h2>
+							<p>Escolha uma das propostas geradas na etapa de Ideação e detalhe a dinâmica da atividade. Abaixo, alguns exemplos de detalhamento (item Desenvolvimento) para você se inspirar.</p>
+							<h3>Exemplo #1</h3>
+							<p>
+								<b>Disciplina:</b> Língua Portuguesa <br />
+								<b>Série:</b> 4o ano<br />
+								<b>Conteúdo:</b> Gênero textual Fábula<br />
+								<b>Duração:</b></Dura> 1 aula<br />
+								<b>Ferramenta:</b> ChatGPT<br />
+								<b>Breve resumo da atividade:</b><br /> Prompt que conduz o aluno passo a passo para construçao de uma fábula.<br />
+								<b>Desenvolvimento:</b><br /> Para fazer esta atividade eu criei um prompt específico que prepara o chatgpt para realizar a atividade com os alunos. A proposta é começar a aula fazendo a leitura da fábula ""A tartaruga e a raposa"". Depois vou dividir a turma em três grupos. Cada grupo vai fazer uma atividade específica relacionada a fábula. O primeiro grupo recebe um conjunto de livros de fábulas com a tarefa de identificar os personagens e a moral da história. O segundo grupo fica no cantinho da criatividade em que tem apel sulfite, lápis de cor, canetinhas, giz de cera, tesoura, cola, revistas para recortar imagens para ilustrar as suas histórias. O terceiro grupo fica nos computadores com o promp especialmente criado para o ChatGPT. A cada 20 minutos os alunos fazem o rodízio até que ele tenha passado pelos 3 cantinhos."
+							</p>		
+							<h3>Exemplo #2</h3>
+							<p>
+								<b>Disciplina:</b> Ciências<br />
+								<b>Série:</b> 7o ano<br />
+								<b></b>Conteúdo: Classificação dos Seres Vivos<br />
+								<b>Duração:</b> 1 aula<br />
+								<b>Ferramenta:</b> --- <br />
+								<b>Breve resumo da atividade:</b> Nesta aula, introduziremos a classificação dos seres vivos. Os alunos aprenderão a importância dessa classificação, suas categorias e as características dos animais em cada uma delas. Com base em seus interesses (por exemplo, futebol, RPG, videogames, bicicletas ou Pokémon), eles serão solicitados a refletir e discutir como a atividade escolhida é classificada, como essa classificação pode facilitar a comunicação e como pode torná-la mais eficiente.<br />
+								<br /><b>Desenvolvimento:</b> A aula começará com uma discussão sobre os interesses dos alunos, tais como futebol, Pokémon, jogos de RPG, games ou outros temas. Para cada área de interesse, faremos uma breve análise para identificar se existe alguma forma de ""classificação"" associada que ajude a compreender ou organizar o tema. Por exemplo, as diferentes posições no futebol (zagueiro, atacante) são uma forma de classificação fundamental para organizar a estratégia do time. Da mesma forma, em jogos de RPG, a classificação dos personagens de acordo com suas habilidades e características também é crucial.
+								Após essa discussão, os alunos serão divididos em grupos de até três, de acordo com o tema de interesse. Cada grupo terá que responder a três perguntas: qual é a classificação ou estrutura do tema escolhido pelo grupo, como essa classificação pode facilitar a comunicação entre os praticantes e como pode torná-los mais eficientes. Os alunos terão 20 minutos para a discussão em grupo. Após o término da discussão, os grupos apresentarão seus resultados.
+								A aula será encerrada com uma breve explanação, informando que na próxima aula os alunos também serão apresentados a uma organização de classificação importante, que é a dos seres vivos. Será destacado como essa classificação contribui para diversas áreas, como medicina, agricultura, indústria e a comunicação científica."
+							</p>
+							<h3>Exemplo #3</h3>
+							<p>
+								<b>Disciplina:</b> Ciências<br />
+								<b>Série:</b> 7o ano<br />
+								<b></b>Conteúdo: Classificação dos Seres Vivos<br />
+								<b>Duração:</b> 1 aula<br />
+								<b>Ferramenta:</b> DALL-E<br />
+								<b>Breve resumo da atividade:</b> Os alunos usarão o DALL-E para criar imagens de novas espécies fictícias, combinando características de dois filos distintos. O objetivo é identificar potenciais sinergias que superem as limitações de um filo e aprimorem as habilidades do outro. Na imagem gerada, eles deverão destacar as características especiais dessa nova criatura, mostrando visualmente como ela se encaixa na classificação proposta.<br />
+								<br /><b>Desenvolvimento:</b> A aula começará com a explicação da dinâmica: os alunos serão divididos em grupos de até três pessoas para criar criaturas fantásticas. Eles devem pensar em características físicas, como forma, cor e textura, além de adaptações especiais para sobreviver em um ambiente específico. A atividade será direcionada para que sugiram combinações interessantes entre dois filos distintos, identificando potenciais sinergias que possam superar as limitações de um filo e aprimorar as habilidades do outro.
+								Os alunos usarão o DALL-E para materializar suas criações e, em seguida, apresentarão sua nova espécie para a turma, explicando suas características e adaptabilidades. Após essa explicação inicial, serão apresentados alguns exemplos de prompts do DALL-E para ajudá-los a estruturar suas ideias.
+								Os grupos se separarão para pensar em seus seres fantásticos. Eles não trabalharão diretamente com o DALL-E; em vez disso, haverá quatro notebooks na sala e cada grupo poderá usar o DALL-E no máximo três vezes para gerar uma imagem (lembrando que cada execução de prompt gera quatro imagens diferentes). Isso permitirá que os estudantes pensem mais tempo sobre suas criaturas e não fiquem em um processo insano de tentativa e erro.
+								Ao final da aula, cada grupo deverá apresentar sua criatura no projetor do professor, explicando suas características e adaptabilidades, e apontando na imagem gerada as características especiais desta nova criatura, tornando visualmente evidente por que ela é fantástica."
+							</p>
+
+						</section>
+						<!--//section-->
+			    </article><!--//docs-article-->
+
+					<article class="docs-article" id="rascunho">
+						<header class="docs-header">
+							<h1 class="docs-heading">Geração do rascunho do plano de aula.</h1>
+							<section class="docs-intro">
+								
+							</section>
+							<!--//docs-intro-->
+						</header>
+						<section class="docs-section" id="formulario">
+							<h2 class="section-heading">Formulário de envio</h2>
+							<p>Use o formulário abaixo para enviar os detalhes do seu projeto.</p>
+							<p>Link para o <a href="https://forms.gle/bEmmdxCDPvoWP8PJ8" target="_blank">formulário de preenchimento</a>.</p>		
+						</section>
+						<section class="docs-section" id="prompts">
+							<h2 class="section-heading">Prompts para geração do plano de aula</h2>
+							<p>Sugestões de prompts que você pode usar para gerar um rascunho do projeto com o ChatGPT.</p>
+							<pre id="myPreTag">Por favor, assuma o papel de um educador cuja prática é fundamentada no Construtivismo e tem como base a Psicologia do Desenvolvimento Cognitivo, a Neurologia e a Linguística. Ok?</pre>
+
+							<pre id="myPreTag">Vou pedir para você gerar o texto de um plano de aula. Na geração do texto você deverá seguir as regras descritas abaixo. ok?
+AVALIAÇÃO = Quando for solicitado a "avaliação" você deverá sugerir o melhor processo avaliativo compatível com o conteúdo e a atividade proposta no plano de aula. Junto com o descritivo do processo avaliativo você deverar gerar uma tabela sugerindo um conjunto de rubricas detalhadas que o professor poderá usar como parte do processo de avaliação.</pre>
+
+							<pre id="myPreTag">Usando como base a proposta abaixo escreva um plano de aula completo com os seguintes tópicos:
+DISCIPLINA; SÉRIE; CONTEÚDO; OBJETIVO DA ATIVIDADE; MATERIAIS; DURAÇÃO; PASSO A PASSO DA ATIVIDADE; AVALIAÇÃO
+[[[[[[INCLUIR AQUI O CONTEÚDO GERADO PELA PLANILHA DE PLANOS DE AULA]]]]]]</pre>
+						<br />
+						<p>Link para a planilha com a <a href="https://docs.google.com/spreadsheets/d/19ZSuLvmu5NplwyO-F3aTfMBxV04m2EZe_Ka5Rof8QRU/edit?usp=sharing" target="_blank">lista de projetos</a>.</p>
+						</section>
+
+						<section class="docs-section" id="lista">
+							<h2 class="section-heading">Lista de projetos gerados</h2>
+							<p>Rascunho do plano de aula gerado pelo ChatGPT com base nos dados dos projetos enviados durante a oficina. O texto corresponde exatamente ao que o ChatGPT gerou sem revisões ou ajustes.</p>
+							<p>
+								<li><a href="apresenta_roteiro.html?id=01" target="_blank">Língua Portuguesa 4º ano</a>.</li>
+								<li><a href="apresenta_roteiro.html?id=02" target="_blank">Ciências 7º ano</a>.</li>
+								<li><a href="apresenta_roteiro.html?id=03" target="_blank">Ciências 7º ano</a>.</li>
+								<li><a href="apresenta_roteiro.html?id=04" target="_blank">Português 1º ano</a>.</li>
+								<li><a href="apresenta_roteiro.html?id=05" target="_blank">História 4º ano</a>.</li>
+								<li><a href="apresenta_roteiro.html?id=06" target="_blank">Educação para o consumo 5º ano</a>.</li>
+								<li><a href="apresenta_roteiro.html?id=07" target="_blank">Ciências 3º ano</a>.</li>
+								<li><a href="apresenta_roteiro.html?id=08" target="_blank">História Educação Infantil</a>.</li>
+								<li><a href="apresenta_roteiro.html?id=09" target="_blank">Ciências Educação Infantil</a>.</li>
+								<li><a href="apresenta_roteiro.html?id=10" target="_blank">Ciência Educação Infantil (2 anos)</a>.</li>
+								<li><a href="apresenta_roteiro.html?id=11" target="_blank">Matemática 4º ano</a>.</li>
+							</p>
+
+						</section>
+			    </article><!--//docs-article-->
+
+					<article class="docs-article" id="ef2">
+						<header class="docs-header">
+							<h1 class="docs-heading">Reflexões com o auxílio da IA</h1>
+							<section class="docs-intro">
+								<p>
+									Diálogo com o ChatGPT em busca de inspiração para a elaboração de um plano de aula sobre a classificação dos seres vivos.</p>
+								<p>
+									Exemplo 1 - <a target="_blank" href="./ChatGPT_CIE_Classificacao_Seres_Vivos.html">Plano de aula.</a>  <br/>
+									Exemplo 2 - <a target="_blank" href="./ChatGPT_CIE_Classificacao_Seres_Vivos_img.html">Dinâmica de atividade envolvendo IA.</a> 
+								</p>	
+							</section>
+							<!--//docs-intro-->
+						</header>
+						<section class="docs-section" id="ex1">
+
+						</section>
+
+						<!--//section-->
+
+			    </article><!--//docs-article-->
+
+
+
+					<footer class="footer">
+						<div class="container text-center py-5">
+							<small class="copyright">Copyright &copy; CRIATIVIDADE.digital – Template by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
+							<ul class="social-list list-unstyled pt-4 mb-0">
+								<!--<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>-->
+								<li class="list-inline-item"><a href="https://www.facebook.com/ACriatividadeDigital/" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+								<!--<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>-->
+							</ul>
+							<!--//social-list-->
+						</div>
+					</footer>
+							</div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+		<script src="assets/js/copycodebox.js"></script> 
+
+</body>
+</html> 
+

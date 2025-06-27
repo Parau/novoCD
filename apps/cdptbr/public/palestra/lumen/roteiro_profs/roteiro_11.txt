@@ -1,0 +1,35 @@
+**Plano de Aula**
+
+- **Disciplina:** Matemática
+- **Série:** 4º ano
+- **Conteúdo:** Formulação de problemas envolvendo a ideia de divisibilidade
+- **Objetivo da Atividade:** Desenvolver a habilidade dos alunos em formular problemas matemáticos que envolvam o conceito de divisibilidade, além de promover o pensamento crítico e a criatividade.
+- **Materiais:** Papel, lápis, acesso à ferramenta Chat GPT.
+- **Duração:** 1 aula (aproximadamente 50 minutos)
+
+**Passo a Passo da Atividade:**
+
+1. **Introdução (10 minutos):** O professor introduz o conceito de divisibilidade, explicando-o de forma clara e simples, utilizando exemplos práticos e contextualizados.
+
+2. **Instruções (5 minutos):** Os alunos são informados de que irão trabalhar em duplas para formular problemas matemáticos envolvendo a ideia de divisibilidade. Eles devem criar enunciados que apresentem situações-problema desafiadoras.
+
+3. **Atividade em Duplas (20 minutos):** Os alunos, em duplas, elaboram problemas matemáticos que envolvam a divisibilidade, criando enunciados claros e contextualizados.
+
+4. **Uso do Chat GPT (10 minutos):** Cada dupla submete o enunciado criado ao Chat GPT, pedindo que a ferramenta inclua mais informações que completem o enredo da situação, de forma a dificultar a resolução do problema.
+
+5. **Discussão em Grupo (10 minutos):** Após receberem as respostas do Chat GPT, as duplas compartilham seus problemas com a turma, discutindo as estratégias utilizadas e as dificuldades encontradas.
+
+6. **Conclusão (5 minutos):** O professor faz uma síntese da aula, destacando a importância da formulação de problemas e incentivando os alunos a continuarem desenvolvendo essa habilidade.
+
+**Avaliação:**
+
+Para avaliar a atividade, será utilizado um processo avaliativo formativo, com foco na observação do engajamento dos alunos, na qualidade dos problemas formulados e na capacidade de aplicar o conceito de divisibilidade de forma criativa. Será utilizada uma tabela de rubricas, conforme abaixo:
+
+| Critério                  | Descrição                                                                                                                                                   |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Qualidade dos problemas   | Enunciados claros e bem formulados, que apresentem situações-problema desafiadoras e que envolvam adequadamente o conceito de divisibilidade.           |
+| Criatividade              | Capacidade de criar enunciados originais e inovadores, que estimulem o pensamento crítico e a busca por soluções diferentes.                              |
+| Coerência e contextualização | Enunciados que apresentem situações-problema contextualizadas, relacionadas ao cotidiano dos alunos e que façam sentido dentro do contexto proposto. |
+| Uso do Chat GPT           | Adequação na utilização da ferramenta, submetendo os enunciados de forma correta e compreensível, e interpretando de maneira eficiente as respostas obtidas. |
+
+Ao final da atividade, os alunos serão avaliados de forma participativa e individualizada, considerando seu desempenho durante a atividade e sua contribuição para as discussões em grupo.

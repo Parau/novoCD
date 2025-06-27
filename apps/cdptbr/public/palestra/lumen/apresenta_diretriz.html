@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diretrizes de uso da IA</title>
+    <style>
+      body {
+        font-family:Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-variation-settings: normal;
+        line-height: 1.5;
+        tab-size: 4;
+        margin: 0 auto; /* centraliza a página horizontalmente */
+        max-width: 950px; /* define a largura máxima */
+        padding: 20px; /* espaço interno para melhor visualização */
+      }
+  </style>
+</head>
+<body>
+
+  <div id="content"></div>
+  <script type="module">
+    // Obter o valor do parâmetro 'id'
+    var id = getParameterByName('id');
+
+    import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+    // Fetch the text file
+    fetch('diretrizes/carta_' + id + '.txt')
+      .then(response => response.text())
+      .then(text => {
+        // Create a variable with the file content
+        const fileContent = text;
+
+        if (fileContent.includes("Jekyl")) { //página padrão de erro 404 atual do site
+          document.getElementById('content').innerHTML = marked.parse("Não existe este roteiro.");
+        } else {
+          // Pass the file content to the marked.parse function
+          document.getElementById('content').innerHTML = marked.parse(fileContent);
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('content').innerHTML = marked.parse("Não existe este roteiro.");
+      })
+
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+
+  </script>
+</body>
+</html>
+
+

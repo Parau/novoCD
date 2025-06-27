@@ -1,0 +1,12 @@
+**Uso Adequado da Inteligência Artificial**
+As Escolas da Cidade de Madison reconhecem que a tecnologia está em constante evolução e tem um impacto significativo em nossa sociedade global, comunidade local e salas de aula. A inteligência artificial (IA), incluindo formas geradoras de IA, está se tornando cada vez mais presente em nosso cotidiano. É nossa responsabilidade educar e treinar os alunos para utilizar a IA de maneira ética e educacional. Portanto, as Escolas da Cidade de Madison não estão proibindo o uso de IA por alunos ou professores, mas cada aluno precisa estar ciente das limitações e diretrizes de seu uso:
+
+1. **Contas de e-mail e Chromebooks:** As contas de e-mail dos alunos das Escolas da Cidade de Madison e o acesso aos Chromebooks a softwares de IA abertos específicos, como ChatGPT, estão bloqueados devido a preocupações com dados e segurança.
+2. **Uso indevido de IA:** Qualquer uso indevido de ferramentas e aplicativos de IA, como hacking ou alteração de dados, é estritamente proibido.
+3. **Uso permitido por professores:** Os professores podem permitir o uso de IA para fins curriculares. O acesso a sites específicos será concedido conforme necessário, seguindo diretrizes específicas de dados e privacidade relacionadas a restrições de idade e uso.
+4. **Restrições em aulas específicas:** As aulas do College Board e de matrícula dupla em faculdades e universidades podem ter restrições e limitações adicionais quanto ao uso da Inteligência Artificial.
+5. **Uso pessoal:** Os alunos que usam software de IA com um dispositivo pessoal e/ou credenciais pessoais devem fazê-lo por sua própria conta e risco - reconhecendo que cada plataforma está coletando várias formas de dados.
+6. **Reconhecimento do uso de IA:** Os alunos devem reconhecer o uso de IA em qualquer capacidade relacionada ao seu trabalho escolar: texto, imagem, multimídia, etc.
+7. **Política de Desonestidade Acadêmica:** O uso de IA pode estar sujeito à Política de Desonestidade Acadêmica.
+8. **Precisão e confiabilidade:** Os alunos devem reconhecer que a IA nem sempre é factualmente precisa, nem vista como uma fonte confiável, e devem ser capazes de fornecer evidências para apoiar suas reivindicações.
+9. **Viés e discriminação:** Todos os usuários também devem estar cientes do potencial de viés e discriminação em ferramentas e aplicativos de IA.

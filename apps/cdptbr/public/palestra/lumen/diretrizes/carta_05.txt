@@ -1,0 +1,88 @@
+
+
+**Diretrizes de Uso da Inteligência Artificial na Escola**
+
+**Propósito:**
+Este documento orienta nossos alunos, colaboradores e comunidade escolar sobre o uso apropriado e responsável da inteligência artificial (IA), especialmente ferramentas de IA generativa, no ensino em sala de aula, na gestão escolar e nas operações em toda a escola. A IA generativa tem benefícios potenciais para a educação e riscos que devem ser gerenciados com cuidado. 
+
+**Contexto:**
+Inteligência artificial refere-se a sistemas de computador que são capazes de automatizar tarefas que normalmente requerem inteligência humana. "IA generativa" refere-se a ferramentas, como Gemini, Bing Chat, ChatGPT, Mid-Journey e Dall-E, que podem produzir novo conteúdo, como texto, imagens ou música, com base em padrões que aprenderam a partir dos dados de treinamento. Isso é possível por meio do "aprendizado de máquina", um subconjunto da IA no qual os computadores aprendem com os dados sem serem explicitamente programados para uma tarefa específica. Embora as ferramentas de IA generativa demonstrem grande potencial e frequentemente forneçam sugestões úteis, é importante notar que são projetadas para fazer previsões com base nos padrões aprendidos nos dados de treinamento, o que nem sempre resulta em saídas corretas. Portanto, é possível que suas saídas sejam imprecisas, enganosas ou incompletas.
+
+**Abrangência:**
+Esta orientação se aplica a todos os alunos, professores, colaboradores, administradores e terceiros que desenvolvem, implementam ou interagem com tecnologias de IA usadas em nosso sistema educacional. Ela abrange todos os sistemas de IA usados para educação, administração e operações, incluindo, mas não se limitando a, modelos de IA generativa, sistemas de tutoria inteligente, agentes conversacionais, software de automação e ferramentas analíticas. Esta orientação complementa as políticas existentes sobre o uso de tecnologia, proteção de dados, integridade acadêmica e apoio aos alunos.
+
+**Princípios Orientadores para o Uso de IA:**
+Os seguintes princípios orientam o uso adequado e seguro da IA e abordam metas educacionais atuais e futuras, autonomia de professores e alunos, integridade acadêmica e segurança. Comprometemo-nos a adotar procedimentos internos para operacionalizar cada princípio.
+1. **Utilização da IA para Apoiar os Objetivos Educacionais:** Utilizamos a IA para ajudar todos os nossos alunos a alcançar seus objetivos educacionais. Utilizaremos a IA para nos ajudar a alcançar os objetivos de nossa comunidade, incluindo a melhoria da aprendizagem dos alunos, a eficácia dos professores e as operações escolares.
+2. **Avaliação de Ferramentas de IA quanto a Preconceitos e Preocupações Éticas:** Estamos comprometidos em avaliar ferramentas de IA quanto a preconceitos e preocupações éticas, garantindo que elas sirvam efetivamente à nossa diversificada comunidade educacional.
+3. **Adesão às Políticas e Regulamentos Existente:** Reafirmamos a adesão às políticas e regulamentos existentes. A IA é uma das muitas tecnologias usadas em nossas escolas, e seu uso estará alinhado com os regulamentos existentes para proteger a privacidade dos alunos, garantir acessibilidade às pessoas com deficiência e proteger contra conteúdo prejudicial.
+4. **Educação sobre IA:** Educamos nossos profissionais e alunos sobre IA. Promover a alfabetização em IA entre alunos e colaboradores é fundamental para lidar com os riscos do uso de IA e ensina habilidades críticas para o futuro dos alunos.
+5. **Exploração de Oportunidades e Abordagem de Riscos:** Exploramos as oportunidades da IA e abordamos os riscos. Continuando a orientar nossa comunidade, trabalharemos para realizar os benefícios da IA na educação, abordar os riscos associados ao uso da IA e avaliar se e quando usar ferramentas de IA, prestando especial atenção à desinformação e ao preconceito.
+6. **Promoção da Integridade Acadêmica:** Utilizamos a IA para promover a integridade acadêmica. Honestidade, confiança, justiça, respeito e responsabilidade continuam sendo expectativas tanto para alunos quanto para professores.
+
+**Uso Responsável de Ferramentas de IA:**
+Nosso sistema escolar reconhece que os usos responsáveis da IA variarão dependendo do contexto, como uma atividade ou tarefa em sala de aula. Os professores esclarecerão se, quando e como as ferramentas de IA serão usadas, com a contribuição dos alunos e das famílias, enquanto o sistema escolar garantirá a conformidade com as leis e regulamentos aplicáveis relacionados à segurança e privacidade de dados. O uso adequado da IA deve ser orientado pelos parâmetros e objetivos específicos definidos para uma atividade. Abaixo estão alguns exemplos de usos responsáveis que servem aos objetivos educacionais.
+
+**Aprendizagem dos Alunos:**
+- **Estímulo à Criatividade:** Os alunos podem aproveitar a IA generativa para estimular a criatividade em diversas disciplinas, incluindo escrita, artes visuais e composição musical.
+- **Colaboração:** As ferramentas de IA generativa podem colaborar com os alunos em projetos em grupo, contribuindo com conceitos, fornecendo apoio à pesquisa e identificando relações entre informações diversas.
+- **Comunicação:** A IA pode oferecer aos alunos tradução em tempo real, exercícios de linguagem personalizados e simulações de diálogo interativo.
+- **Criação e Aprimoramento de Conteúdo:** A IA pode ajudar a gerar materiais de estudo personalizados, resumos, questionários e auxílios visuais, ajudar os alunos a organizar pensamentos e conteúdo, e auxiliar na revisão de conteúdo.
+- **Tutoria:** As tecnologias de IA têm o potencial de democratizar a tutoria e o suporte individualizado, tornando a aprendizagem personalizada mais acessível a uma gama mais ampla de alunos.
+
+**Suporte ao Professor:**
+- **Design e Análise de Avaliações:** Além de aprimorar o design de avaliações criando perguntas e fornecendo feedback padronizado sobre erros comuns, a IA pode realizar avaliações diagnósticas para identificar lacunas no conhecimento ou habilidades e permitir avaliações de desempenho ricas.
+- **Desenvolvimento e Aprimoramento de Conteúdo para a Diferenciação:** A IA pode ajudar os educadores a diferenciar currículos, sugerir planos de aula, gerar diagramas e gráficos, e personalizar práticas independentes com base nas necessidades e níveis de proficiência dos alunos.
+- **Desenvolvimento Profissional Contínuo:** A IA pode orientar os educadores recomendando estratégias de ensino e aprendizagem com base nas necessidades dos alunos, personalizando o desenvolvimento profissional de acordo com as necessidades e interesses dos professores, sugerindo projetos colaborativos entre disciplinas ou professores, e oferecendo cenários de treinamento baseados em simulação, como dar uma aula ou gerenciar uma conferência entre pais e professores.
+- **Pesquisa e Compilação de Recursos:** A IA pode ajudar os educadores recomendando livros ou artigos relevantes para uma lição e mantendo os professores atualizados sobre técnicas de ensino, pesquisa e métodos.
+
+**Gestão e Operações Escolares:**
+- **Comunicações:** As ferramentas de IA podem ajudar a redigir e refinar comunicações dentro da comunidade escolar, implantar chatbots para consultas rotineiras e fornecer tradução instantânea de idiomas.
+- **Eficiência Operacional:** A equipe pode usar ferramentas de IA para apoiar as operações escolares e otimizar processos administrativos, incluindo programação de cursos, automação de gerenciamento de inventário, aumento da economia de energia e geração de relatórios de desempenho.
+- **Sistemas de Gerenciamento de Aprendizagem (LMS):** A IA pode analisar dados de desempenho dos alunos para fornecer insights aos educadores, ajudando-os a adaptar a instrução ou intervenções.
+
+**Uso Proibido de Ferramentas de IA:**
+- **Bullying/Assédio:** O uso de ferramentas de IA para manipular mídia e se passar por outras pessoas para praticar bullying, assédio ou qualquer forma de intimidação é estritamente proibido. Todos os usuários devem empregar essas ferramentas exclusivamente para fins educacionais, mantendo os valores de respeito, inclusão e integridade acadêmica em todos os momentos.
+- **Superdependência:** A dependência de ferramentas de IA pode diminuir a discrição e a supervisão humanas. Nuances e contextos importantes podem ser ignorados e aceitos. Os professores esclarecerão se, quando e como as ferramentas de IA devem ser usadas em suas salas de aula, e espera-se que professores e alunos revisem as saídas geradas pela IA antes do uso.
+- **Plágio e trapaça:** Alunos e funcionários não devem copiar de nenhuma fonte, incluindo IA generativa, sem aprovação prévia e documentação adequada. Os alunos não devem apresentar trabalhos gerados por IA como seu trabalho original. Os funcionários e alunos serão ensinados a citar ou reconhecer corretamente o uso da IA quando aplicável.
+- **Acesso desigual:** Se uma tarefa permitir o uso de ferramentas de IA, as ferramentas serão disponibilizadas para todos os alunos, considerando que alguns podem já ter acesso a esses recursos fora da escola.
+
+**Considerações Especiais:**
+- **Viés Societal:** Ferramentas de IA treinadas em dados humanos refletirão inherentemente os preconceitos sociais nos dados. Os riscos incluem reforçar estereótipos, recomendar intervenções educacionais inadequadas ou fazer avaliações discriminatórias, como relatar falsamente plágio por falantes não nativos de inglês. Colaboradores e alunos serão orientados a entender a origem e as implicações do viés societal na IA, as ferramentas de IA serão avaliadas quanto à diversidade de seus dados de treinamento e transparência, e humanos revisarão todas as saídas geradas pela IA antes do uso.
+- **Diminuição da autonomia e Responsabilidade:** Embora a IA generativa apresente uma assistência útil para ampliar as capacidades dos professores e reduzir a carga de trabalho dos professores, essas tecnologias não serão usadas para substituir o papel dos educadores humanos no ensino e na orientação dos alunos. As práticas essenciais de ensino, orientação, avaliação e inspiração dos aprendizes permanecerão sob responsabilidade do professor na sala de aula.
+- **Preocupações com a Privacidade:** As ferramentas de IA não serão usadas para monitorar salas de aula para fins de responsabilidade, como analisar interações entre professores e alunos ou rastrear movimentos de professores, o que pode infringir os direitos de privacidade dos alunos e professores e criar uma cultura de vigilância.
+
+Gestão e Operações Escolares
+
+**Comprometimento da Privacidade:** O sistema educacional não utilizará a IA de maneiras que comprometam a privacidade de professores ou alunos ou levem à coleta não autorizada de dados, pois isso viola leis de privacidade e princípios éticos de nosso sistema. Consulte a seção Segurança, Privacidade e Segurança abaixo para obter mais informações.
+
+**Não conformidade com Políticas Existente:** Avaliaremos as ferramentas de IA quanto à conformidade com todas as políticas e regulamentos relevantes, como leis de privacidade e princípios éticos. As ferramentas de IA serão obrigadas a detalhar se/como as informações pessoais são usadas para garantir que os dados pessoais permaneçam confidenciais e não sejam mal utilizados.
+
+**Consideração Especial: Avançando na Integridade Acadêmica**
+
+Embora seja necessário abordar o plágio e outros riscos à integridade acadêmica, utilizaremos a IA para promover os valores fundamentais da integridade acadêmica - honestidade, confiança, justiça, respeito e responsabilidade.
+
+- Colaboradores e alunos podem usar ferramentas de IA para verificar fatos, cruzando rapidamente informações e afirmações, embora ainda devam ser críticos em relação ao resultado.
+- Ferramentas avançadas de IA podem aumentar a justiça, identificando e minimizando os preconceitos na avaliação e nos testes.
+- A IA pode adaptar materiais para alunos com diferentes necessidades de aprendizagem, demonstrando respeito pelas diferenças individuais.
+
+**Recomendações Adicionais para Avançar na Integridade Acadêmica**
+
+- Os professores podem permitir o uso limitado de IA generativa em tarefas específicas ou partes de tarefas e articular por que não permitem seu uso em outras tarefas.
+- Os professores não utilizarão tecnologias que pretendem identificar o uso de IA generativa para detectar trapaças e plágio, pois sua precisão é questionável.
+- Se um professor ou aluno usar um sistema de IA, seu uso deve ser divulgado e explicado. Como parte da divulgação, os alunos podem optar por citar seu uso de um sistema de IA usando um dos seguintes recursos:
+  - MLA Style - Generative AI
+  - APA Style - ChatGPT
+  - Chicago Style - Generative AI
+
+**Consideração Especial: Privacidade e Segurança**
+
+Implementaremos medidas de segurança razoáveis para proteger as tecnologias de IA contra acesso não autorizado e uso indevido. Todos os sistemas de IA implantados na escola serão avaliados quanto à conformidade com as leis e regulamentos relevantes, incluindo aqueles relacionados à proteção de dados, privacidade e segurança online dos alunos. Por exemplo, os fornecedores deixarão claro quando um usuário estiver interagindo com uma IA em vez de um humano.
+
+Funcionários e alunos estão proibidos de inserir informações confidenciais ou pessoalmente identificáveis em ferramentas de IA não autorizadas, como aquelas sem acordos de privacidade de dados aprovados. Compartilhar dados confidenciais ou pessoais com um sistema de IA pode violar a privacidade se não for adequadamente divulgado e consentido.
+
+**Revisão**
+
+Esta orientação será revisada anualmente, ou mais cedo, para garantir que continue atendendo às necessidades da escola e esteja em conformidade com as mudanças em leis, regulamentos e tecnologia. Agradecemos o feedback sobre esta política e sua eficácia conforme o uso da IA evolui.
+
+[Última atualização: DD/MM/AA]

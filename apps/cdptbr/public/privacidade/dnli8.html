@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidade – Projeto Dia Nacional do Livro Infantil</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefefe;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #fcd34d;
+      color: #1f2937;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 4px solid #fbbf24;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1, h2 {
+      margin: 0.5em 0;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    footer {
+      background-color: #fcd34d;
+      color: #1f2937;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      border-top: 2px solid #fbbf24;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Política de Privacidade</h1>
+    <p>Projeto Dia Nacional do Livro Infantil</p>
+  </header>
+
+  <main>
+    <p>A sua privacidade é muito importante para nós. Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações no projeto <strong>Dia Nacional do Livro Infantil</strong>.</p>
+
+    <h2>1. Quais dados coletamos?</h2>
+    <p>Coletamos apenas as informações essenciais para manter você informado sobre o projeto:</p>
+    <ul>
+      <li>Nome</li>
+      <li>E-mail</li>
+      <li>Número de WhatsApp</li>
+    </ul>
+
+    <h2>2. Como usamos essas informações?</h2>
+    <p>Usamos seus dados exclusivamente para:</p>
+    <ul>
+      <li>Enviar novidades e atualizações sobre o projeto;</li>
+      <li>Compartilhar conteúdos educativos e materiais relacionados a alfabetização e literatura infantil;</li>
+      <li>Entrar em contato via WhatsApp quando necessário.</li>
+    </ul>
+
+    <h2>3. Compartilhamento de dados</h2>
+    <p>Não compartilhamos suas informações com terceiros. Seus dados são utilizados apenas por nossa equipe organizadora para fins relacionados ao projeto.</p>
+
+    <h2>4. Segurança</h2>
+    <p>Adotamos medidas técnicas e organizacionais adequadas para proteger suas informações contra acessos não autorizados, alterações, divulgação ou destruição.</p>
+
+    <h2>5. Seus direitos</h2>
+    <p>Você pode, a qualquer momento, solicitar:</p>
+    <ul>
+      <li>Correção ou atualização dos seus dados;</li>
+      <li>Remoção dos seus dados da nossa base;</li>
+      <li>Informações sobre como os dados estão sendo utilizados.</li>
+    </ul>
+
+    <h2>6. Contato</h2>
+    <p>
+      Para dúvidas ou solicitações relacionadas à sua privacidade, envie uma mensagem para: 
+      <span id="msgbox">[endereço protegido]</span>.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 Dia Nacional do Livro Infantil. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    // Técnica de obfuscação menos óbvia
+    const parts = ['criatividade', 'digital', 'dnli8'];
+    const domain = parts[0] + '.' + parts[1];
+    const box = parts[2] + '@' + domain;
+
+    const span = document.getElementById('msgbox');
+    const clickable = document.createElement('a');
+    clickable.href = 'mailto:' + box;
+    clickable.textContent = box;
+
+    // Substitui o conteúdo do span pela âncora clicável
+    span.textContent = '';
+    span.appendChild(clickable);
+  </script>
+</body>
+</html>

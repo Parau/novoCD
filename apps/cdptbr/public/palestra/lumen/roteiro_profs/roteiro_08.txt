@@ -1,0 +1,52 @@
+**Plano de Aula**
+
+**Disciplina:** História  
+**Série:** Educação Infantil  
+**Conteúdo:** Vikings  
+**Objetivo da Atividade:** Introduzir de forma lúdica e interativa o tema dos Vikings, estimulando a curiosidade e o interesse das crianças pela história.  
+
+**Materiais:**
+- Livros ilustrativos sobre os Vikings  
+- Imagens relacionadas ao tema  
+- Assistente virtual (Siri, Google Assistant, Amazon Alexa)  
+
+**Duração:** 1 aula  
+
+**Passo a Passo da Atividade:**
+
+1. **Introdução (10 minutos):**  
+   - Apresentar o tema dos Vikings de forma simples e visual, mostrando imagens ou livros ilustrativos.
+   - Explique que as crianças participarão de uma aventura virtual para descobrir mais sobre os Vikings.
+
+2. **Desenvolvimento (20 minutos):**  
+   - Utilizando a assistente virtual programada, faça perguntas sobre os Vikings para as crianças.
+   - Exemplos de perguntas que as crianças podem fazer:
+     - "O que os Vikings comiam?"
+     - "Como eram as casas dos Vikings?"
+   - A assistente virtual fornecerá respostas simples e adaptadas à idade das crianças, enriquecendo seu conhecimento sobre o tema.
+
+3. **Atividade Prática (20 minutos):**  
+   - Divida as crianças em grupos e peça para criarem uma miniapresentação sobre algum aspecto da vida dos Vikings (roupas, barcos, alimentação, etc.).
+   - Eles podem usar materiais simples, como papel, lápis de cor e cola, para criar seus elementos visuais.
+
+4. **Apresentação (10 minutos):**  
+   - Cada grupo apresentará sua miniapresentação para a turma, compartilhando o que aprenderam sobre os Vikings.
+
+5. **Conclusão (5 minutos):**  
+   - Recapitule os principais pontos aprendidos durante a aula.
+   - Estimule as crianças a compartilharem o que mais as surpreendeu ou interessou sobre os Vikings.
+
+**Avaliação:**  
+O processo avaliativo será contínuo, observando o envolvimento e participação das crianças durante a atividade prática e a apresentação. Além disso, a interação das crianças com a assistente virtual também será avaliada, observando a pertinência das perguntas e o interesse demonstrado pelo tema.
+
+**Tabela de Rubricas:**
+
+| Critério                        | Descrição                                                                                              | Pontuação |
+|---------------------------------|--------------------------------------------------------------------------------------------------------|-----------|
+| Participação na atividade       | Envolvimento e colaboração durante a criação da miniapresentação sobre os Vikings.                    | 0-5       |
+| Qualidade da apresentação       | Clareza, organização e criatividade na apresentação dos aspectos da vida dos Vikings escolhidos pelo grupo. | 0-5       |
+| Pertinência das perguntas       | Relevância e interesse nas perguntas feitas à assistente virtual sobre os Vikings.                     | 0-5       |
+| Conhecimento adquirido          | Demonstração de aprendizado sobre os Vikings, evidenciado nas respostas durante a atividade.           | 0-5       |
+| Comportamento durante a aula    | Postura, respeito e colaboração com os colegas durante toda a aula.                                    | 0-5       |
+
+**Observação:** A pontuação total máxima é de 25 pontos.

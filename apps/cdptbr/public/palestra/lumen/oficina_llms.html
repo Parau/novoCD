@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Atividades LLMs</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Roteiro de atividades baseados em LLM (Large Language Models - ChatGPT, Copilot, Gemini e Maritaca).">
+    <meta name="author" content="CRIATIVIDADE.digital">    
+    <link rel="shortcut icon" href="assets/favicon.png"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+		<link rel="stylesheet" href="assets/css/codebox.css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64612385-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-64612385-1');
+		</script>
+		<!-- Facebook Pixel Code -->
+		<script>
+			!function(f,b,e,v,n,t,s)
+			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t,s)}(window, document,'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '1593045684179127');
+			fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=1593045684179127&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+						<div class="container-fluid position-relative py-2">
+							<div class="docs-logo-wrapper">
+								<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+								<div class="site-logo"><a class="navbar-brand" href="/palestra/lumen/"><i class="far fa-lightbulb"></i><span
+											class="logo-text">&nbsp;&nbsp;<span class="text-alt"> CRIATIVIDADE.</span>digital</span></a></div>
+							</div>
+							<!--//docs-logo-wrapper-->
+							<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+								<div class="top-search-box d-none d-lg-flex">
+									<!--<form class="search-form">
+										            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+										            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+										        </form>-->
+								</div>
+								<!--
+								<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+									<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+								</ul>
+								-->
+								<!--//social-list-->
+								<!--
+									<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-4-documentation-template-for-software-projects/"
+									class="btn btn-primary d-none d-lg-flex">Download</a>
+								-->
+							</div>
+							<!--//docs-top-utilities-->
+						</div>
+						<!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+						<li class="nav-item section-title"><a class="nav-link scrollto active" href="#Introducao"><span class="theme-icon-holder mr-2"><i class="fas fa-home"></i></span>Atividades LLMs</a></li>
+						<li class="nav-item section-title"><a class="nav-link scrollto active" href="#tiposprompt"><span class="theme-icon-holder mr-2">1️⃣</span>Tipos de prompt</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#especificos">Específicos</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#cenarios">Baseado em cenários</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#comparacao">Comparação</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#opiniao">Opinião</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#instrucoes">Instruções</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#persona">Persona</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#resposta">Estruturando a resposta</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#passoapasso">Passo a passo</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#tutoria">Tutoria</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#diagramas">Diagramas</a></li>
+
+						<li class="nav-item section-title"><a class="nav-link scrollto active" href="#dados"><span class="theme-icon-holder mr-2">2️⃣</span>Fornecendo dados</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#linkdados">Link ou dados</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#analisarimg">Analisando imagens</a></li>
+					</ul>
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+			<style>
+				.thumb {float: right; width: 45%;}
+				@media only screen and (max-width: 520px) {
+					.txt {font-size: 22px;}
+					.thumb {float: right; width: 100%}
+				}
+				</style>
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="Introducao">
+						<header class="docs-header">
+
+							<h1 class="docs-heading">Atividades usando LLMs<span class="docs-time">Última atualização: 08/04/2024</span></h1>
+
+							<section class="docs-intro">
+								<a href="https://aprender.digital/"><img class="thumb" src="./o-nome-da-gente.gif" align="rigth"></a>
+								<p>
+									Um Modelo de Linguagem Grande (LLM - Large Language Models) é um tipo de modelo de inteligência artificial (IA) projetado para processar e gerar textos semelhantes ao que um humano escreveria. 
+									Eles são treinados em grandes quantidades de texto para aprender a prever a próxima palavra ou frase em uma sequência de texto.
+								</p>
+								<p>
+									O ChatGPT, Claude, Gemini e Maritaca são exemplos de LLMs. 
+									Esses modelos se assemelham a outros LLMs no sentido de que todos são baseados em técnicas de aprendizado profundo e são capazes de processar texto de forma semelhante à humana, gerando texto em linguagem natural. 
+									No entanto, cada modelo pode ter suas próprias especializações, como o foco em conversação, geração de texto criativo ou tradução automática.
+								</p>
+
+									<div class="callout-block callout-block-info">
+										<div class="content">
+												<h4 class="callout-title">
+													<span class="callout-icon-holder mr-1">
+														<svg class="svg-inline--fa fa-info-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg><!-- <i class="fas fa-info-circle"></i> Font Awesome fontawesome.com -->
+												</span><!--//icon-holder-->
+													Importante
+											</h4>
+												<p>As saídas da IA são imprevisíveis, e cada vez que você tenta um prompt, obterá um resultado diferente. Alguns prompts podem não funcionar em determinado momento. Se um prompt não funcionar, 
+													reinicie a conversa e tente novamente. Se ainda assim não funcionar, considere alterar o texto do seu prompt ou experimentar um Modelo de Linguagem Grande diferente.</p>
+										</div><!--//content-->
+								</div>
+
+								<div class="callout-block callout-block-danger mr-1">
+									<div class="content">
+											<h4 class="callout-title">
+												<span class="callout-icon-holder">
+													<svg class="svg-inline--fa fa-exclamation-triangle fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exclamation-triangle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path></svg><!-- <i class="fas fa-exclamation-triangle"></i> Font Awesome fontawesome.com -->
+											</span><!--//icon-holder-->
+												ATENÇÃO!
+										</h4>
+											<p>Vamos usar vários LLMs diferentes. Para acessá-los, você precisará criar uma conta. 
+												Minha sugestão é usar sua conta do Google (ou Gmail) para fazer isso. Se você não tem uma conta no Gmail, recomendamos que crie uma antes das atividades. 
+												Se não se sentir confortável em usar sua própria conta, sugiro criar uma conta específica para estas atividades.
+											</p>
+									</div><!--//content-->
+							</div>
+
+							</section>
+							<!--//docs-intro-->
+						</header>
+			    </article>
+
+					<article class="docs-article" id="tiposprompt">
+						<header class="docs-header">
+							<h1 class="docs-heading">Tipos de prompt</h1>
+							<section class="docs-intro">
+								<p>Um prompt é uma instrução ou estímulo dado a um sistema de inteligência artificial para iniciar uma conversa ou realizar uma tarefa específica. 
+									Ele fornece o contexto inicial para a interação e orienta o sistema sobre o que se espera como resposta.</p>
+								<div class="callout-block callout-block-info">
+									<div class="content">
+											<h4 class="callout-title">
+												<span class="callout-icon-holder mr-1">
+													<svg class="svg-inline--fa fa-info-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg><!-- <i class="fas fa-info-circle"></i> Font Awesome fontawesome.com -->
+											</span><!--//icon-holder-->
+												Importante
+										</h4>
+											<p>Para os prompts sugeridos abaixo, utilize o ChatGPT para executá-los. 
+												No entanto, também pode valer a pena experimentar o Maritaca, um LLM desenvolvido por um grupo no Brasil, para comparar os resultados. 
+												Isso não é fundamental para a conclusão das atividades, mas pode oferecer uma perspectiva interessante.
+												<br />Para acessar o ChatGPT utilize este link <a target="_blank" href="https://chat.openai.com/">chat.openai.com</a>.
+												<br />O Maritaca você acessa aqui <a target="_blank" href="https://chat.maritaca.ai/">chat.maritaca.ai</a>.
+											</p>
+									</div><!--//content-->
+							</div>
+							<p>Não há uma classificação oficial dos tipos de prompt, mas para facilitar, criei categorias para apresentar a capacidade de geração de texto dos LLMs.</p>
+
+							</section>
+							<!--//docs-intro-->
+						</header>
+						<section class="docs-section" id="especificos">
+							<h2 class="section-heading">Específicos</h2>
+							<p>Esses prompts são diretos/focados, frequentemente requerendo um tipo específico de resposta.</p>
+							
+							<pre id="myPreTag">O que é tecnologia educacional?</pre>
+
+							<pre id="myPreTag">Descreva três estratégias para gerenciar o comportamento dos alunos em sala de aula.</pre>
+							
+						</section>
+						<!--//section-->
+					
+						<section class="docs-section" id="cenarios">
+							<h2 class="section-heading">Baseados em cenários</h2>
+							<p>
+								Esses prompts apresentam uma situação ou cenário para o LLM responder, frequentemente incentivando a narração de histórias ou a resolução de problemas.
+							</p>
+							<pre id="myPreTag">Você está liderando um projeto em grupo na sala de aula e um aluno não está participando. Como você incentivaria a participação deles e garantiria um trabalho em grupo justo?</pre>
+
+							<pre id="myPreTag">Você é um professor se preparando para uma reunião com os pais de um aluno com dificuldades. Como você abordaria a reunião e colaboraria com os pais para apoiar o progresso acadêmico do aluno?</pre>
+
+						</section>
+
+						<section class="docs-section" id="comparacao">
+							<h2 class="section-heading">Comparação</h2>
+							<p>
+								Esses prompts pedem ao LLM para comparar entre duas ou mais coisas. 
+							</p>
+							<pre id="myPreTag">Compare as teorias de Piaget e Vygotsky sobre o desenvolvimento cognitivo. Como suas perspectivas influenciam as práticas de ensino?</pre>
+
+							<pre id="myPreTag">Compare os modelos de regressão linear e redes neurais em inteligência artificial.</pre>
+
+						</section>
+
+						<section class="docs-section" id="opiniao">
+							<h2 class="section-heading">Opinião</h2>
+							<p>
+								Esses prompts pedem a opinião do ChatGPT sobre um tópico específico. 
+							</p>
+							<pre id="myPreTag">Qual é a sua opinião sobre testes padronizados nas escolas? Como isso impacta o ensino e a aprendizagem?</pre>
+
+							<pre id="myPreTag">Como você acha que a tecnologia está mudando o papel do professor na sala de aula? Quais são as implicações para a educação no futuro?</pre>
+
+						</section>
+
+						<section class="docs-section" id="instrucoes">
+							<h2 class="section-heading">Instruções</h2>
+							<p>
+								Esses prompts pedem ao LLM para fornecer instruções passo a passo para completar uma tarefa. 
+							</p>
+							<pre id="myPreTag">Escreva instruções passo a passo para criar um origami em forma de cachorro.</pre>
+						</section>
+
+						<section class="docs-section" id="persona">
+							<h2 class="section-heading">Persona</h2>
+							<p>
+								Em um prompt, a definição de uma persona se refere à criação de um personagem fictício com características específicas, usado para orientar a resposta do LLM. 
+								A persona pode ser algo abrangente como “um especialista em educação” ou especifica identificando idade, gênero, grau de escolaridade, etc.. 
+							</p>
+							<pre id="myPreTag">Assuma o papel de um especialista em desenvolvimento infantil convidado para uma palestra em uma conferência de educação. Sua palestra será sobre a importância do brincar no desenvolvimento das crianças. Escreva o esboço do seu discurso, destacando os benefícios do brincar para o aprendizado e o desenvolvimento das habilidades sociais, emocionais e cognitivas das crianças.</pre>
+
+							<pre id="myPreTag">Maria, 35 anos, mãe de dois filhos em idade escolar, trabalha em tempo integral como gerente de vendas. Ela está interessada em encontrar maneiras eficazes de ajudar seus filhos a melhorarem suas habilidades de leitura. Maria está buscando estratégias práticas para incentivar a leitura em casa com seus filhos. Descreva três atividades simples que Maria pode incorporar à rotina diária para tornar a leitura mais atraente e estimulante para seus filhos.</pre>
+
+						</section>
+
+						<section class="docs-section" id="resposta">
+							<h2 class="section-heading">Estruturando a resposta</h2>
+							<p>
+								Sinaliza ao LLM como o texto deve ser estruturado. 
+							</p>
+							<pre id="myPreTag">Escreva sobre o uso da IA na educação com alunos do ensino fundamental. Organize o seu texto de acordo com os tópicos abaixo: 
+* Introdução
+* Benefícios
+* Riscos
+* Exemplos usando o ChatGPT para aprender língua portuguesa.
+* Dicas finais
+								</pre>
+						</section>
+
+						<section class="docs-section" id="passoapasso">
+							<h2 class="section-heading">Passo a passo</h2>
+							<p>
+								Ao dividir um prompt ou instruções extensas em perguntas menores, o texto torna-se mais objetivo, reduzindo a possibilidade de ambiguidades. Isso facilita a compreensão e a execução das tarefas pelo modelo de linguagem, tornando mais claro o que exatamente se deseja. Além disso, permite solicitar ajustes ou informações adicionais nos textos gerados. 
+							</p>
+							<pre id="myPreTag">Preciso que você assuma o papel de uma educadora muito experiente e com uma prática baseada no Construtivismo e fundamentada na Psicologia do Desenvolvimento Cognitivo, na Neurologia e na Linguística. ok?</pre>
+							<pre id="myPreTag">Vou trabalhar com meus alunos a exploração de fenômenos da vida cotidiana que evidenciem propriedades físicas dos materiais – como densidade, condutibilidade térmica e elétrica, respostas a forças magnéticas, solubilidade, respostas a forças mecânicas (dureza, elasticidade etc.), entre outras. Ok?</pre>
+							<pre id="myPreTag">Meus alunos tem entre 9 e 11 anos e os seguintes interesses:
+* Formula um
+* Pokemon
+* Desenhos e histórias - Manga
+* Videogame
+* Hipismo
+* Futebol
+ok?</pre>
+<pre id="myPreTag">Para cada interesse dos meus alunos, forneça exemplos de fenômenos da vida cotidiana que demonstrem propriedades físicas dos materiais, como densidade, condutibilidade térmica e elétrica, resposta a forças magnéticas, solubilidade e resposta a forças mecânicas (dureza, elasticidade, etc.). Utilize como base a tabela de interesses que passei anteriormente.</pre>
+						</section>
+
+						<section class="docs-section" id="tutoria">
+							<h2 class="section-heading">Tutoria</h2>
+							<p>
+								Um "prompt de tutoria" é uma instrução ou conjunto de instruções que você dá a um modelo de IA, como o ChatGPT, para simular a interação entre um tutor e um aluno. 
+								Ele é projetado para orientar o modelo a responder como um tutor real, oferecendo explicações, exemplos e orientações de forma semelhante a um tutor humano.
+								Ao criar um prompt de tutoria, você define como o modelo deve se comportar, incluindo a maneira como ele se apresenta ao aluno, como faz perguntas, como fornece explicações e como reage às respostas do aluno. 
+								Isso permite que você crie simulações de situações de aprendizagem específicas, como ensinar um conceito matemático complexo a um aluno jovem, de uma forma interativa e educativa. 
+							</p>
+
+							<div class="callout-block callout-block-danger mr-1">
+								<div class="content">
+										<h4 class="callout-title">
+											<span class="callout-icon-holder">
+												<svg class="svg-inline--fa fa-exclamation-triangle fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exclamation-triangle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path></svg><!-- <i class="fas fa-exclamation-triangle"></i> Font Awesome fontawesome.com -->
+										</span><!--//icon-holder-->
+											ATENÇÃO!
+									</h4>
+										<p>Tenha cuidado ao usar este tipo de prompt e não o utilize sem um acompanhamento próximo do aluno. É importante que o aluno já tenha sido apresentado à IA e tenha conhecimento dos benefícios e dos riscos associados ao seu uso. Por exemplo, nem sempre a instrução de não mudar de assunto funciona.
+										</p>
+										<p>Além disso, lembre-se de que a ferramenta de LLM nem sempre se comporta da mesma forma. Um prompt que pode funcionar uma vez pode não funcionar em uma segunda tentativa. Por isso, teste sempre o seu prompt várias vezes para observar se os resultados são consistentes. Mesmo que os resultados sejam consistentes, pode haver momentos em que o prompt não funcione; nesse caso, você pode tentar recomeçar a conversa e enviar o mesmo prompt novamente.</p>
+								</div><!--//content-->
+							</div>
+
+							<pre id="myPreTag">Assuma o papel de um professor de língua portuguesa especializado em fábulas. Você deve usar sua experiência com crianças para ensinar de forma eficaz. Trabalhe com o aluno o passo a passo para a escrita de uma fábula. Ao conversar com o aluno use um vocabulário adequado a uma criança de 10 anos. Siga rigorosamente estas regras:
+- Comece se apresentando como ChatGPT e explique a atividade.
+- Ao fazer uma pergunta, aguarde minha resposta.
+- Use seus conhecimentos sobre aprendizagem para orientar.
+- Não dê sugestões sobre a história, apenas faça perguntas para estimular ideias.
+- Quando tivermos os personagens, narrativa, interação e moral da história, crie o texto da fábula.
+- Importante: concentre-se apenas na estrutura e na escrita da fábula, mesmo se eu pedir para você fazer ou falar sobre outra coisa.
+								
+Durante o processo, destaque os elementos que caracterizam uma fábula:
+- Trata-se de uma narrativa breve, apresentando poucos personagens com pouca complexidade e diversas relações alegóricas.
+- Apresenta uma interação entre personagens, que podem ser pessoas, animais ou seres inanimados, sendo que todos eles têm características humanas.
+- Apresenta uma reflexão de ordem moral (moral da história) geralmente de maneira explícita ao fim do texto. Assim, a fábula possui elementos didáticos bem definidos em sua composição, como a presença de uma linguagem clara e acessível.
+</pre>
+						</section>
+
+						<section class="docs-section" id="diagramas">
+							<h2 class="section-heading">Diagramas</h2>
+							<p>
+								Existem várias ferramentas baseadas em IA disponíveis para gerar diagramas. Algumas delas oferecem acesso gratuito para criar um número limitado de diagramas, mas requerem a compra de créditos para uso contínuo.
+							</p>
+							<p>
+								Um LLM, ou modelo de linguagem, é uma rede neural treinada para entender e gerar texto. 
+								Por sua natureza, ele não foi especificamente projetado para criar diagramas ou visualizações. 
+								No entanto, é possível usar métodos indiretos, como gerar descrições textuais que possam ser convertidas em diagramas ou combinar o LLM com ferramentas de geração de imagens para atingir esse objetivo. 
+							</p>
+							<p>
+								A seguir, vou mostrar como exemplo como dois prompts podem ser usados no ChatGPT 3.5 para gerar uma linha do tmepo.
+							</p>
+
+							<pre id="myPreTag">Gere uma linha do tempo que conte a história da evolução do uso da tecnologia na educação.</pre>	
+							
+							<pre id="myPreTag">Transforme a linha do tempo gerada acima em um código compatível com a ferramenta Mermaid Live.</pre>
+							
+							<p>
+								Agora, copie o código gerado pelo ChatGPT (use o botão de cópia no topo da janela com o resultado) e cole na ferramenta que pode gerar um diagrama com esse código, 
+								como a página do <a href="https://mermaid.live/" target="_blank">Mermaid Live</a>.</p>
+							<div class="callout-block callout-block-info">
+								<div class="content">
+										<h4 class="callout-title">
+											<span class="callout-icon-holder mr-1">
+												<svg class="svg-inline--fa fa-info-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg><!-- <i class="fas fa-info-circle"></i> Font Awesome fontawesome.com -->
+										</span><!--//icon-holder-->
+											Importante
+									</h4>
+										<p>O ChatGPT é um modelo de linguagem estocástico, o que significa que pode gerar resultados diferentes para a mesma pergunta a cada solicitação. 
+											Isso ocorre devido à sua natureza probabilística, que leva em conta fatores como contexto, aleatoriedade na geração de texto e interpretação do prompt.</p>
+								</div><!--//content-->
+							</div>
+
+							<p>Não sei qual resultado você obteve com os prompts acima. 
+								Se não for o desejado, peça ao ChatGPT para ajustar a linha do tempo, por exemplo, incluindo mais informações ou resumindo-as.
+							</p>
+							<p>Abaixo apresento um exemplo de diálogo mais longo com o ChatGPT no processo de geração do diagrama. Antes disso, leia o quadro de aviso abaixo.</p>
+							<div class="callout-block callout-block-danger mr-1">
+								<div class="content">
+										<h4 class="callout-title">
+											<span class="callout-icon-holder">
+												<svg class="svg-inline--fa fa-exclamation-triangle fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exclamation-triangle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path></svg><!-- <i class="fas fa-exclamation-triangle"></i> Font Awesome fontawesome.com -->
+										</span><!--//icon-holder-->
+											ATENÇÃO!
+									</h4>
+										<p>Devido à natureza estocástica do ChatGPT, a variabilidade nos resultados pode aumentar ainda mais com uma sequência de prompts. 
+											Ou seja, o resultado que você obterá com a sequência de prompts abaixo pode ser muito diferente do meu ao criar o exemplo. 
+											Portanto, observe a resposta do ChatGPT e ajuste o texto do prompt conforme necessário, ou reinicie a conversa para obter resultados mais próximos do desejado.
+										</p>
+								</div><!--//content-->
+							</div>
+
+							<pre id="myPreTag">Gere uma linha do tempo que conte a história da evolução do uso da tecnologia na educação.</pre>
+							<pre id="myPreTag">Adicione na linha do tempo como a pandemia de COVID-19 impactou a adoção de tecnologias digitais nas escolas.</pre>
+							<pre id="myPreTag">Agora apresente a linha do tempo completa incluindo o covid.</pre>
+							<p>
+								No prompt abaixo, eu uso meu conhecimento sobre o Mermaid para direcionar o uso do formato visual de uma <i>timeline</i>, que é uma opção disponível na ferramenta. 
+								É possível que o código gerado pelo ChatGPT tenha escolhido na geração o formato <i>gantt</i>, que se parece mais com um cronograma de projeto.</p>
+							
+							<pre id="myPreTag">Transforme a linha do tempo gerada acima em um código compatível com a ferramenta Mermaid Live, utilizando o tipo de diagrama "timeline".</pre>
+							<p>Compare o resultado que você obteve com o meu resultado.👇</p>
+							<a href="assets/linha-tempo-tec-educ.svg" target="_blank"><img src="assets/linha-tempo-tec-educ.svg" alt="Linha do tempo - tecnologia na educação"></a>
+							</section>
+
+
+						<!--//section-->
+
+			    </article><!--//docs-article-->
+
+					<article class="docs-article" id="dados">
+						<header class="docs-header">
+							<h1 class="docs-heading">Fornecendo dados</h1>
+							<section class="docs-intro">
+								<p>
+									É possível, junto com o prompt, fornecer os dados que o LLM deve analisar. O modelo do prompt segue o formato "De acordo com o texto abaixo, faça...".</p>
+								<p>Para evitar um exemplo muito extenso devido aos dados, vou usar a estratégia de link que algumas ferramentas de LLMs aceitam. Nesse caso, indico o link de onde ele deve buscar os dados para processar de acordo com meu prompt. No entanto, o resultado seria o mesmo se eu incluísse os dados diretamente no prompt, respeitando o limite de caracteres aceitos pela ferramenta.</p>	
+
+							<div class="callout-block callout-block-danger mr-1">
+								<div class="content">
+										<h4 class="callout-title">
+											<span class="callout-icon-holder">
+												<svg class="svg-inline--fa fa-exclamation-triangle fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exclamation-triangle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path></svg><!-- <i class="fas fa-exclamation-triangle"></i> Font Awesome fontawesome.com -->
+										</span><!--//icon-holder-->
+											ATENÇÃO!
+									</h4>
+										<p>Nesta atividade você poderá utilizar o <b>Google Gemini</b> ou o <b>Microsoft Bing Copilot</b>. Novamente você precisará criar uma conta para pode usar estas ferramentas. 
+											Se você estiver usando o navegador Chrome do Google você pode direcionar para o uso do Gemini. 
+											Caso você esteja usando o navegador Edge da Microsoft você pode direcionar para o uso do Bing Copilot.
+										</p>
+								</div><!--//content-->
+						</div>
+						<p>Bing Copilot: <a target="_blank" href="https://www.bing.com/chat">www.bing.com/chat</a>
+						<br />Google Gemini: <a target="_blank" href="https://gemini.google.com/">gemini.google.com</a>
+							</p>
+							</section>
+							<!--//docs-intro-->
+						</header>
+						<section class="docs-section" id="linkdados">
+							<h2 class="section-heading">Link ou dados</h2>
+								<p>
+									Copie e cole o conteúdo do prompt abaixo em sua ferramenta de LLM escolhida (Bing ou Gemini).
+								</p>
+								<pre id="myPreTag">Resuma os principais pontos presentes no link https://en.wikipedia.org/wiki/Large_language_model. Gere o texto em português.</pre>
+							</section>
+						</section>
+						<!--//section-->
+					
+						<section class="docs-section" id="analisarimg">
+							<h2 class="section-heading">Analisando imagens</h2>
+							<p>
+								As ferramentas de LLMs estão se expandindo e se transformando em multimodais. Para executar o prompt abaixo primeiro baixe para o seu computador a imagem presente no link: 
+								<a target="_blank" href="https://emt.gartnerweb.com/ngw/globalassets/intl-br/artigos/novidades-em-ia-hyple-cycle.png">Imagem Gartner <i>Hype Cycle</i> para IA - 2023</a>.
+							</p>
+							<p>Depois arraste ao Bing ou ao Gemini a imagem e escreva o seguinte prompt:</p>
+							<pre id="myPreTag">Explique o conteúdo presente na imagem.</pre>
+						</section>
+
+						<!--//section-->
+
+			    </article><!--//docs-article-->
+
+
+					<footer class="footer">
+						<div class="container text-center py-5">
+							<small class="copyright">Copyright &copy; CRIATIVIDADE.digital – Template by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
+							<ul class="social-list list-unstyled pt-4 mb-0">
+								<!--<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>-->
+								<li class="list-inline-item"><a href="https://www.facebook.com/ACriatividadeDigital/" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+								<!--<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>-->
+							</ul>
+							<!--//social-list-->
+						</div>
+					</footer>
+							</div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+		<script src="assets/js/copycodebox.js"></script> 
+
+</body>
+</html> 
+

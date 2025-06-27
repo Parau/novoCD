@@ -1,0 +1,37 @@
+## Prezados Colaboradores,
+
+A inteligência artificial (IA) tem o potencial de transformar nossa escola de maneira empolgantes, mas também precisamos estar atentos aos riscos. Abaixo, apresentamos alguns exemplos de usos responsáveis e proibidos da IA. Durante o restante do ano letivo, ofereceremos oportunidades contínuas de desenvolvimento profissional.
+
+### Exemplos de Usos Responsáveis da IA
+
+#### Aprendizagem dos Alunos
+
+- **Estímulo à Criatividade:** Os alunos podem utilizar a IA generativa para estimular a criatividade em diversas disciplinas, como escrita, artes visuais e composição musical.
+- **Criação e Aprimoramento de Conteúdo:** A IA pode auxiliar na criação de materiais de estudo personalizados, resumos, questionários e recursos visuais, além de ajudar os alunos a organizar pensamentos e conteúdo, e revisar o material.
+
+#### Apoio aos Professores
+
+- **Design e Análise de Avaliações:** A IA pode aprimorar as avaliações criando perguntas e fornecendo feedback padronizado sobre erros comuns. Os professores serão responsáveis pela avaliação, feedback e avaliação da utilidade da IA em apoiar seu trabalho de avaliação. A IA não substituirá a responsabilidade de avaliação realizada pelos professores.
+- **Diferenciação de Conteúdo:** A IA pode ajudar os educadores a diferenciar os conteúdos, sugerir planos de aula, criar diagramas e gráficos, e personalizar práticas independentes com base nas necessidades e níveis de proficiência dos alunos.
+
+Os usos da IA em sala de aula podem variar. Por exemplo, a IA pode ser apropriada para ser usada por todos os alunos no laboratório, em kits usando o laboratório móvel ou operada pelo professor e apresentada no projetor multimídia. Encorajamos você a discutir o estratégias de uso da IA com seus pares.
+
+### Exemplos de Usos Proibidos da IA
+
+#### Aprendizagem dos Alunos
+
+- **Bullying/Assédio:** É estritamente proibido o uso de ferramentas de IA para criar deepfakes, manipular mídia ou se passar por outras pessoas para praticar bullying, assédio ou qualquer forma de intimidação. Espera-se que todos os usuários utilizem essas ferramentas exclusivamente para fins educacionais, promovendo os valores de respeito, inclusão e integridade acadêmica em todos os momentos.
+- **Plágio e Trapaça:** Alunos e colaboradores não devem copiar de nenhuma fonte, incluindo a IA generativa, sem aprovação prévia e documentação adequada. Os alunos não devem submeter trabalhos gerados por IA como sendo de sua autoria original. Os professores serão claros sobre quando e como as ferramentas de IA podem ser usadas para completar tarefas e reestruturar as mesmas para reduzir oportunidades de plágio. Procedimentos existentes relacionados a potenciais violações de nossa Política de Integridade Acadêmica continuarão a ser aplicados.
+
+#### Apoio aos Professores
+
+- **Viés:** As ferramentas de IA treinadas em dados humanos refletirão inerentemente os preconceitos sociais nos dados. Os riscos incluem reforçar estereótipos, recomendar intervenções educacionais inadequadas ou fazer avaliações discriminatórias, como relatar falsamente a ocorrência de plágio. Colaboradores e alunos deverão estar atentos a origem e as implicações do viés na IA. É de sua responsabilidade revisar todas as saídas geradas pela IA antes do uso.
+- **Diminuição da Autonomia e Responsabilidade do Aluno e do Professor:** As tecnologias de IA não serão usadas para substituir o papel dos educadores no ensino e orientação dos alunos. A IA é uma ferramenta de suporte para ampliar o julgamento humano, não substituí-lo. Professores e colaboradores devem revisar e refletir criticamente sobre todo o conteúdo gerado pela IA antes do uso.
+
+Continuaremos a garantir que a privacidade e a segurança dos dados sejam prioridades e continuaremos a aprovar software e ferramentas de acordo com políticas atualizadas que incluem a IA. Funcionários e alunos estão proibidos de inserir informações confidenciais ou pessoalmente identificáveis em ferramentas de IA não autorizadas, como aquelas sem acordos de privacidade de dados aprovados. Para obter mais informações, leiam nossa orientação completa [inserir link] sobre o uso da IA na educação, que inclui um acordo de amostra para alunos sobre a IA na sala de aula. Também forneceremos oportunidades contínuas de desenvolvimento profissional ao longo do ano letivo.
+
+Atenciosamente,
+
+[Nome]
+
+[Título]

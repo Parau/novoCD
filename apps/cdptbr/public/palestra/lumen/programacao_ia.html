@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>IA em Projetos de Programação</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Explore o uso da Inteligência Artificial em projetos de programação com seus alunos.">
+    <meta name="author" content="CRIATIVIDADE.digital">    
+    <link rel="shortcut icon" href="assets/favicon.png"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+		<link rel="stylesheet" href="assets/css/codebox.css">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64612385-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-64612385-1');
+		</script>
+		<!-- Facebook Pixel Code -->
+		<script>
+			!function(f,b,e,v,n,t,s)
+			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t,s)}(window, document,'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '1593045684179127');
+			fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=1593045684179127&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+						<div class="container-fluid position-relative py-2">
+							<div class="docs-logo-wrapper">
+								<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+								<div class="site-logo"><a class="navbar-brand" href="/palestra/lumen/"><i class="far fa-lightbulb"></i><span
+											class="logo-text">&nbsp;&nbsp;<span class="text-alt"> CRIATIVIDADE.</span>digital</span></a></div>
+							</div>
+							<!--//docs-logo-wrapper-->
+							<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+								<div class="top-search-box d-none d-lg-flex">
+									<!--<form class="search-form">
+										            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+										            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+										        </form>-->
+								</div>
+								<!--
+								<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+									<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+								</ul>
+								-->
+								<!--//social-list-->
+								<!--
+									<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-4-documentation-template-for-software-projects/"
+									class="btn btn-primary d-none d-lg-flex">Download</a>
+								-->
+							</div>
+							<!--//docs-top-utilities-->
+						</div>
+						<!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+						<li class="nav-item section-title"><a class="nav-link scrollto active" href="#Introducao"><span class="theme-icon-holder mr-2"><i class="fas fa-home"></i></span>Programação e IA</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#gercode">IA: Geração de código</a></li>
+				  <li class="nav-item"><a class="nav-link scrollto" href="#gerbloco">IA: Geração de blocos</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#blocosia">Blocos + IA</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#jupyter">Jupyter Notebook</a></li>
+
+					</ul>
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+			<style>
+				.thumb {float: right; width: 45%;}
+				@media only screen and (max-width: 520px) {
+					.txt {font-size: 22px;}
+					.thumb {float: right; width: 100%}
+				}
+				</style>
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="Introducao">
+						<header class="docs-header">
+							<h1 class="docs-heading">IA em Projetos de Programação<span class="docs-time">Última atualização: 16/04/2024</span></h1>
+							<section class="docs-intro">
+								<p>Este texto explora o emprego da IA na geração de código e na programação utilizando blocos. 
+									Serão abordadas as aplicações mais comuns da IA nesses contextos, como a criação de trechos de código e a resolução de erros, além dos desafios e das possibilidades que surgem da integração da IA na programação em blocos.</p>
+							</section>
+							<section class="docs-section" id="gercode">
+								<h2 class="section-heading">IA e a geração de código</h2>
+								<p>O uso mais comum da IA em atividades de programação consiste em usar o LLM para gerar trechos de código ou mesmo pedir ajuda em um trecho de código que está apresentando erro. Exemplos de prompt abaixo:</p>
+								<pre id="myPreTag">Por favor, crie uma função em JavaScript que receba uma string e retorne true se todas as letras forem maiúsculas ou false se forem minúsculas.</pre>
+								<pre id="myPreTag">Analise o código Python abaixo, pois ele não está produzindo a saída que eu esperava. 
+x = 5
+if x > 1 and x < 4:
+   print("x está entre 1 e 4")
+y = 10
+if y > 1 or y < 4:
+   print("y não está entre 1 e 4")</pre>
+							 <pre id="myPreTag">Estou recebendo a seguinte mensagem de erro para o código python abaixo: TypeError: range expected at least 1 argument, got 0
+for i in range():
+   print(i)</pre>
+							</section>
+
+							<section class="docs-section" id="gerbloco">
+								<h2 class="section-heading">IA e a programação usando blocos</h2>
+								<p>É possível usar o ChatGPT para gerar programas baseados em blocos, como Microsoft <a href="https://www.microsoft.com/pt-br/makecode" target="_blank">MakeCode</a>, 
+									Code.org <a href="https://code.org/tools/applab" target="_blank">App Lab</a> e <a href="https://scratch.mit.edu/" target="_blank">Scratch</a>. No entanto, isso pode ser desafiador devido à natureza textual do ChatGPT. É necessário traduzir a lógica textual do ChatGPT para a representação de blocos usada pela ferramenta, exigindo trabalho adicional de formatação e interpretação para garantir a correta conversão da lógica.</p>
+								<p>Ao utilizar uma ferramenta de programação em blocos com seus alunos, um LLM pode não ser tão útil. No entanto, ainda é possível aproveitar os recursos da IA nesse tipo de programação. 
+									Escrevi um tópico a respeito disso, que você pode conferir <a href="#blocosia">aqui</a></p>
+							</section>
+
+							<section class="docs-section" id="blocosia">
+								<h2 class="section-heading">Integrando IA na Programação em Blocos</h2>
+								<p><a href="https://scratch.mit.edu/" target="_blank">Scratch</a>, Microsoft <a href="https://www.microsoft.com/pt-br/makecode" target="_blank">MakeCode</a> e Code.org <a href="https://code.org/tools/applab" target="_blank">App Lab</a> são ferramentas populares no ensino de programação, robótica e atividades maker escolares, devido à sua estrutura de programação visual e baseada em blocos.</p>
+								<p>Enquanto escrevo este texto, tanto o Scratch quanto o MakeCode não oferecem recursos de IA integrados, mas você pode experimentar o App Lab, que possui essas funcionalidades em uma <a href="https://studio.code.org/s/aiml-2022?section_id=3047235" target="_blank">trilha de aprendizagem específica</a> do Code.org.
+									Para utilizar IA no Scratch e no MakeCode, é necessário criar extensões usando JavaScript. No caso do Scratch, é preciso gerar uma versão personalizada, já que a versão online oficial não permite o uso de extensões personalizadas. No entanto, existe uma versão alternativa do Scratch chamada <a href="https://playground.raise.mit.edu/main/" target="_blank">The RAISE Playground</a>, desenvolvida em parceria entre o Personal Robots Group do MIT Media Lab e a iniciativa MIT RAISE, que inclui extensões relacionadas à IA em seu ambiente online.
+								</p>
+								<p>Uma boa notícia para quem já utiliza o Teachable Machine com os alunos é que esta versão <a href="https://playground.raise.mit.edu/main/" target="_blank">customizada do Scratch</a> possui uma extensão específica para ele. Isso significa que você pode treinar um modelo no Teachable Machine e utilizá-lo em seus projetos no Scratch.</p>
+								<p>Este é o <a href="https://playground.raise.mit.edu/main/" target="_blank">link para acessar o Scratch com extensões de IA</a> (The RAISE Playground).</p>
+								<p>Quanto ao App Lab, você pode aprender como ele funciona com IA <a href="https://studio.code.org/s/aiml-2022?section_id=3047235" target="_blank">nesta trilha</a> do Code.org. Se você deseja apenas criar um modelo para uso, pode ir direto para a <a href="https://studio.code.org/s/aiml-2022/lessons/21/levels/1" target="_blank">lição 21</a> para carregar seus dados e realizar o treinamento. Depois, dentro do App Lab, você pode acessar o modelo treinado na opção "Gerenciar modelos de IA".</p>
+							</section>
+
+							<section class="docs-section" id="jupyter">
+								<h2 class="section-heading">Jupyter Notebook</h2>
+								<p>O Jupyter Notebook é uma alternativa que oferece uma experiência mais abrangente no uso da IA. Ele permite criar e compartilhar documentos interativos contendo código, visualizações e texto explicativo. Amplamente utilizado na análise de dados e visualização, é também usado no ensino de programação por integrar código, texto e gráficos em um único ambiente interativo.</p>
+								<p>Em termos de facilidade de uso, o Jupyter Notebook é moderadamente simples, especialmente para atividades básicas. No entanto, para alunos iniciantes em programação, pode haver uma curva de aprendizado inicial ao se familiarizar com a sintaxe do Python e a estrutura do Notebook. Embora seja ótimo para desenvolver projetos com alunos do ensino fundamental ao médio, uma introdução à programação pode ser mais adequada usando ferramentas de programação visual em blocos como o Scratch ou as ferramentas disponíveis no Code.org.</p>
+								<p>Aqui estão algumas ideias inspiradas na estratégia de utilizar a IA como exemplos relacionados à unidade temática de Probabilidade e Estatística, como o EF06MA33 e o EF07MA34:</p>
+								<li><a target="_blank" href="https://colab.research.google.com/drive/1h4bjOTDZ1UGlSgMWeWkpPyRcRSAGLBGH?usp=sharing">Exemplo dos sorvetes usados na palestra Desmistificando a IA</a>.</li>
+								<li><a target="_blank" href="https://colab.research.google.com/drive/1YLZY2ve0xmxKNVv4JPlboP3R3cgZkiSb?usp=sharing">Exemplo previsão da próxima palavra</a>.</li>
+								<li><a target="_blank" href="https://colab.research.google.com/drive/1hQjJrNe4uM0YQoieZqfGQCbAfrjBGmKG?usp=sharing">Exemplo de IA fazendo a classificação</a>.</li>
+							</section>
+
+						</header>
+			    </article>
+
+				
+
+
+					<footer class="footer">
+						<div class="container text-center py-5">
+							<small class="copyright">Copyright &copy; CRIATIVIDADE.digital – Template by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
+							<ul class="social-list list-unstyled pt-4 mb-0">
+								<!--<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+								<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>-->
+								<li class="list-inline-item"><a href="https://www.facebook.com/ACriatividadeDigital/" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+								<!--<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>-->
+							</ul>
+							<!--//social-list-->
+						</div>
+					</footer>
+							</div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+		<script src="assets/js/copycodebox.js"></script> 
+
+</body>
+</html> 
+

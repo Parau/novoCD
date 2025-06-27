@@ -1,0 +1,42 @@
+**Plano de Aula**
+
+- **Disciplina:** Língua Portuguesa
+- **Série:** 4º ano
+- **Conteúdo:** Gênero textual Fábula
+- **Objetivo da Atividade:** Compreender as características e a estrutura da fábula, identificar seus elementos e moral da história, estimular a criatividade na produção textual e na ilustração.
+- **Materiais:** Livros de fábulas, papel sulfite, lápis de cor, canetinhas, giz de cera, tesoura, cola, revistas para recortar imagens, computadores com acesso à internet.
+- **Duração:** 1 aula (aproximadamente 50 minutos)
+
+**Passo a Passo da Atividade:**
+
+1. **Introdução (10 minutos):** 
+   - Apresentação da fábula "A Tartaruga e a Raposa".
+   - Breve explicação sobre o gênero textual fábula, destacando suas características e a presença de personagens que representam animais com características humanas.
+
+2. **Divisão em Grupos (5 minutos):**
+   - Formação dos três grupos: Grupo 1 (leitura e análise), Grupo 2 (criatividade), Grupo 3 (escrita).
+
+3. **Atividades nos Grupos (30 minutos):**
+   - **Grupo 1:** Leitura e análise dos livros de fábulas para identificar personagens e moral da história.
+   - **Grupo 2:** Atividade no cantinho da criatividade, utilizando os materiais disponíveis para ilustrar uma fábula.
+   - **Grupo 3:** Utilização do prompt especialmente criado para o ChatGPT, onde os alunos vão interagir com o modelo para criar sua própria fábula.
+
+4. **Rodízio entre os Grupos (15 minutos):**
+   - A cada 20 minutos, os grupos trocam de atividade até que todos tenham passado pelos três cantinhos.
+
+5. **Conclusão (5 minutos):**
+   - Discussão em sala sobre as fábulas criadas pelos alunos.
+   - Destaque para a importância da moral da história nas fábulas.
+
+**Avaliação:**
+Para avaliar o desempenho dos alunos, será utilizado um processo avaliativo formativo e somativo, considerando a participação nas atividades em grupo, a criatividade na produção textual e na ilustração, bem como a compreensão dos elementos das fábulas. A avaliação será contínua e individual, considerando o envolvimento e o desenvolvimento de cada aluno ao longo da atividade.
+
+**Tabela de Rubricas:**
+
+| Critério            | Descrição                                                                                      | Pontuação |
+|---------------------|------------------------------------------------------------------------------------------------|-----------|
+| Participação        | Participação ativa nas atividades em grupo e no rodízio entre os cantinhos                   | 0-5       |
+| Criatividade        | Criatividade na produção textual e na ilustração da fábula                                     | 0-5       |
+| Compreensão         | Compreensão dos elementos das fábulas, identificação dos personagens e da moral da história   | 0-5       |
+
+A soma dos pontos das rubricas resultará na nota final do aluno para a atividade.

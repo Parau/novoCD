@@ -1,0 +1,25 @@
+**Políticas para o Uso de Inteligência Artificial (IA) na Escola**
+
+1. **Propósito:** Estabelecer diretrizes claras para o uso ético e responsável da IA na escola, visando melhorar a aprendizagem dos alunos e apoiar os professores.
+
+2. **Responsabilidades:**
+   - Os administradores são responsáveis por aprovar e supervisionar o uso da IA na escola.
+   - Os professores são responsáveis por integrar a IA de forma aprimorar a experiência de aprendizado dos alunos.
+   - Os alunos são responsáveis por usar a IA de maneira ética e respeitosa.
+
+3. **Uso da IA:**
+   - A IA deve ser usada para aprimorar a aprendizagem dos alunos, não substituí-la.
+   - A IA pode ser usada para personalizar o ensino, fornecer feedback individualizado e melhorar a eficiência administrativa.
+   - Os alunos devem ser transparentes sobre o uso da IA em seus trabalhos escolares. Eles devem reconhecer quando a IA foi usada e explicar como ela foi empregada.
+   - Os professores serão claros sobre quando e como as ferramentas de IA podem ser usadas para as tarefas.
+
+4. **Segurança e Privacidade:**
+   - A IA deve ser usada de acordo com as leis e regulamentos de proteção de dados.
+   - Informações pessoais dos alunos não devem ser compartilhadas com sistemas de IA não autorizados.
+
+5. **Transparência:**
+   - Os professores devem explicar quando e como a IA será usada em sala de aula.
+   - Os alunos devem estar cientes de quando interagem com sistemas de IA.
+
+6. **Revisão e Atualização:**
+   - Essas políticas serão revisadas anualmente para garantir sua eficácia e conformidade com as leis e regulamentos em constante evolução.
