@@ -33,7 +33,7 @@ import { CriatividadeDigitalLogo } from './CriatividadeDigitalLogo';
 import classes from './HeaderCD.module.css';
 import { useAuth } from '../firebase/AuthContext'; 
 
-const LogoutButton = ({ onLogout }) => (
+const LogoutButton =  ({ onLogout }: { onLogout: () => void }) => (
   <Anchor
     component="button"
     type="button"
