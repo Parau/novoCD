@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation';
 import { useAuth  } from '../../firebase/AuthContext';
 import { AuthenticationForm } from '../../components/AuthenticationForm/AuthenticationForm';  
 
-export function LoginPage()  {
+export default function LoginPage()  {
   const router = useRouter();
   const { login, user } = useAuth();
 
@@ -27,5 +27,3 @@ export function LoginPage()  {
     </div>
   );
 };
-
-export default LoginPage;
