@@ -2,7 +2,7 @@ pnpm dev
 - para rodar tudo incluindo modificações nos packages
 
 pnpm add -D sass --filter cdptbr
-- Para instalar como dependencia de desenvolvimento somente no cdptbr
+- Para instalar como dependencia de desenvolvimento (devDependencies) somente no cdptbr
 
 pnpm remove sass --filter cdptbr
 - Para desinstalar como dependencia de desenvolvimento somente no cdptbr
