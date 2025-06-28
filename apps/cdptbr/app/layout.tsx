@@ -1,6 +1,7 @@
 import '@mantine/core/styles.css';
 import '@mantine/notifications/styles.css';
 import React from 'react';
+import { GoogleTagManager } from '@next/third-parties/google';
 import { ColorSchemeScript, mantineHtmlProps, Container } from '@mantine/core';
 import { Providers } from './providers';
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: any }) {
               {children}
             </Container>
         </Providers>
+        <GoogleTagManager gtmId="GTM-WQG5CDQL" />
       </body>
     </html>
   );
