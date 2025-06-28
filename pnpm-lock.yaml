@@ -69,9 +69,9 @@ importers:
       '@next/third-parties':
         specifier: ^15.3.4
         version: 15.3.4(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2))(react@19.1.0)
-      '@repo/nextjs-util':
+      '@repo/analytics':
         specifier: workspace:*
-        version: link:../../packages/nextjs-util
+        version: link:../../packages/analytics
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -125,6 +125,28 @@ importers:
         specifier: 5.8.2
         version: 5.8.2
 
+  packages/analytics:
+    dependencies:
+      '@next/third-parties':
+        specifier: ^15.3.4
+        version: 15.3.4(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2))(react@19.1.0)
+    devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      rimraf:
+        specifier: ^6.0.1
+        version: 6.0.1
+      tsup:
+        specifier: ^8.5.0
+        version: 8.5.0(postcss@8.5.6)(typescript@5.8.3)
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
+
   packages/eslint-config:
     devDependencies:
       '@eslint/js':
@@ -160,24 +182,6 @@ importers:
       typescript-eslint:
         specifier: ^8.34.0
         version: 8.35.0(eslint@9.29.0)(typescript@5.8.2)
-
-  packages/nextjs-util:
-    devDependencies:
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../eslint-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
-      rimraf:
-        specifier: ^6.0.1
-        version: 6.0.1
-      tsup:
-        specifier: ^8.5.0
-        version: 8.5.0(postcss@8.5.6)(typescript@5.8.3)
-      typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
 
   packages/typescript-config: {}
 
