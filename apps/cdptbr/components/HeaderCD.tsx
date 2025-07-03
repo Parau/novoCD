@@ -32,6 +32,7 @@ import { useRouter } from 'next/navigation';
 import { CriatividadeDigitalLogo } from './CriatividadeDigitalLogo';
 import classes from './HeaderCD.module.css';
 import { useAuth } from '../firebase/AuthContext'; 
+import { useEffect } from 'react';
 
 const LogoutButton =  ({ onLogout }: { onLogout: () => void }) => (
   <Anchor
@@ -85,6 +86,21 @@ export function HeaderCD() {
   const theme = useMantineTheme();
   const { user, logout } = useAuth();
   const router = useRouter();
+
+  const getClaims = async () => {
+    try {
+      const claims = await user?.getIdTokenResult();
+      console.log('User claims:', claims);
+    } catch (error) {
+      console.error('Error fetching user claims:', error);
+    }
+  }
+  
+  useEffect(() => {
+    if (user) {
+      getClaims();
+    }
+  }, [user]);
 
   const links = mockdata.map((item) => (
     <UnstyledButton className={classes.subLink} key={item.title}>
@@ -174,6 +190,7 @@ export function HeaderCD() {
                 <Group gap={8} align="center">
                   <Text>{user.email}</Text>
                   <LogoutButton onLogout={logout} />
+
                 </Group>
               </Group>
             )}
