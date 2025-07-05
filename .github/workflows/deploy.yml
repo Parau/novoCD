@@ -51,7 +51,7 @@ jobs:
       - name: 3. Instalar dependências
         run: pnpm install
 
-      - name: 4. Buildar APENAS o aplicativo 'cdptbr'
+      - name: 4. Construir (build) APENAS o aplicativo 'cdptbr'
         run: pnpm turbo build --filter=cdptbr
 
       - name: 5. Deploy para o repositório 'parau.github.io'
