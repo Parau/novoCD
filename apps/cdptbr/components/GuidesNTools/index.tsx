@@ -18,7 +18,7 @@ import classes from './GuidesNTools.module.css';
 import {trackElementClick, parametersConstants } from '@repo/analytics';
 
 const mockdata = [
-  { title: 'Alfabetização', icon: IconWritingSign, color: 'violet', target: "_blank", link: 'https://criatividade.digital/alfabetizar/' },
+  { title: 'Alfabetização', icon: IconWritingSign, color: 'violet', target: "", link: '/alfa/' },
   { title: 'Construções Criativas', icon: IconBlocks, color: 'indigo', target: "_blank", link: 'https://criatividade.digital/CCriativas/' },
   { title: 'Dicas LEGO® SPIKE™ Prime', icon: IconLego, color: 'blue', target: "_blank", link: 'https://lego.criatividade.digital/dicas/' },
 

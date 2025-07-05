@@ -15,16 +15,21 @@ export default function LoginLinkPage() {
       signInWithEmailLink(auth, email, window.location.href)
         .then(() => {
           window.localStorage.removeItem('emailForSignIn');
+          // Get stored redirect URL or fallback to home
+          const redirectTo = window.localStorage.getItem('redirectAfterLogin') || '/';
+          window.localStorage.removeItem('redirectAfterLogin');
           showNotification({
             title: 'Login bem-sucedido',
             message: 'Você foi autenticado com sucesso.',
             color: 'green',
             position: 'top-right',  
           });
-          router.push('/');
+          router.push(redirectTo);
         })
         .catch((error) => {
           console.error('Error signing in with email link', error);
+          // Clean up stored redirect URL on error
+          window.localStorage.removeItem('redirectAfterLogin');
           showNotification({
             title: 'Erro de login',
             message: 'Ocorreu um erro ao tentar fazer login. Por favor, tente novamente.',
@@ -36,6 +41,8 @@ export default function LoginLinkPage() {
         });
     }
     else {
+      // Clean up stored redirect URL on invalid link
+      window.localStorage.removeItem('redirectAfterLogin');
       showNotification({
           title: 'Erro no login por email',
           message: 'Este link de login não é válido. Por favor, tente novamente.',

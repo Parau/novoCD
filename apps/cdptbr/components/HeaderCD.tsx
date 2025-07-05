@@ -28,11 +28,10 @@ import {
   useMantineTheme,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { CriatividadeDigitalLogo } from './CriatividadeDigitalLogo';
 import classes from './HeaderCD.module.css';
 import { useAuth } from '../firebase/AuthContext'; 
-import { useEffect } from 'react';
 
 const LogoutButton =  ({ onLogout }: { onLogout: () => void }) => (
   <Anchor
@@ -86,21 +85,7 @@ export function HeaderCD() {
   const theme = useMantineTheme();
   const { user, logout } = useAuth();
   const router = useRouter();
-
-  const getClaims = async () => {
-    try {
-      const claims = await user?.getIdTokenResult();
-      console.log('User claims:', claims);
-    } catch (error) {
-      console.error('Error fetching user claims:', error);
-    }
-  }
-  
-  useEffect(() => {
-    if (user) {
-      getClaims();
-    }
-  }, [user]);
+  const pathname = usePathname();
 
   const links = mockdata.map((item) => (
     <UnstyledButton className={classes.subLink} key={item.title}>
@@ -125,7 +110,9 @@ export function HeaderCD() {
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           {/* <MantineLogo size={30} /> */}
-          <CriatividadeDigitalLogo />
+          <Anchor href="/" underline="never" style={{ display: "flex", alignItems: "center" }}>
+            <CriatividadeDigitalLogo />
+          </Anchor>
 
           {/* 
             <Group h="100%" gap={0} visibleFrom="sm">
@@ -184,7 +171,7 @@ export function HeaderCD() {
 
           <Group visibleFrom="sm">
             {!user ? (
-              <Button variant="default" onClick={() => router.push('/login')}>Log in</Button>
+              <Button variant="default" onClick={() => router.push(`/login?redirect=${pathname}`)}>Login</Button>
             ) : (
               <Group>
                 <Group gap={8} align="center">
@@ -241,7 +228,7 @@ export function HeaderCD() {
 
           <Group justify="center" grow pb="xl" px="md">
             {!user ? (
-              <Button variant="default" onClick={() => router.push('/login')}>Log in</Button>
+              <Button variant="default" onClick={() => router.push(`/login?redirect=${pathname}`)}>Login</Button>
             ) : (
               <Group>
                 <Text>{user.email}</Text>

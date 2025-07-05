@@ -1,7 +1,10 @@
+/*
+ESTA É A VERSÃO ANTERIOR A MODIFICAÇÃO DO USO DO CALLBACK E DO USEMEMO SUGERIDA E IMPLEMENTADA PELO GEMINI
+*/
 // context/AuthContext.tsx
 "use client";
 
-import { createContext, useContext, useEffect, useState, ReactNode, useCallback, useMemo } from 'react';
+import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import {
   onAuthStateChanged,
   signOut,
@@ -111,19 +114,19 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   // Funções para consultar books
-  const hasAccess = useCallback((bookId: string): boolean => {
+  const hasAccess = (bookId: string): boolean => {
     return books ? bookId in books : false;
-  }, [books]);
+  };
 
-  const getExpiry = useCallback((bookId: string): Date | null => {
+  const getExpiry = (bookId: string): Date | null => {
     return books && books[bookId] ? books[bookId] : null;
-  }, [books]);
+  };
 
-  const getAllAccess = useCallback((): Record<string, Date> | null => {
+  const getAllAccess = (): Record<string, Date> | null => {
     return books;
-  }, [books]);
+  };
 
-  const login = useCallback(async (provider: AuthProviderType, email?: string) => {
+  const login = async (provider: AuthProviderType, email?: string) => {
     try {
       let authProvider;
       switch (provider) {
@@ -204,22 +207,14 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
       }
       throw error;
     }
-  }, []);
+  };
 
-  const logout = useCallback(async () => {
+  const logout = async () => {
     await signOut(auth);
     router.push('/');
-  }, [router]);
+  };
 
-  const value = useMemo(() => ({
-    user,
-    loading,
-    login,
-    logout,
-    hasAccess,
-    getExpiry,
-    getAllAccess
-  }), [user, loading, login, logout, hasAccess, getExpiry, getAllAccess]);
+  const value = { user, loading, login, logout, hasAccess, getExpiry, getAllAccess };
 
   return (
     <AuthContext.Provider value={value}>
