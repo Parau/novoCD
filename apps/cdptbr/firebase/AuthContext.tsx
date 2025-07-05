@@ -49,7 +49,7 @@ const AuthContext = createContext<AuthContextType>({
   login: async () => {},
   logout: async () => {},
   books: null,
-  hasAccess: () => 0,
+  hasAccess: () => ACCESS_STATUS.FORBIDDEN,
   getExpiry: () => null,
   getAllAccess: () => null,
 });
@@ -111,8 +111,21 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   // Funções para consultar books
-  const hasAccess = useCallback((bookId: string): boolean => {
-    return books ? bookId in books : false;
+  const hasAccess = useCallback((bookId: string): number => {
+    if (!books || !books[bookId]) {
+      return ACCESS_STATUS.FORBIDDEN;
+    }
+
+    /* AINDA NÃO ESTÁ CONSIDERANDO O CASO DE EXPIRAÇÃO
+    // Create a new Date object to avoid mutating the state
+    const expiryDate = new Date(books[bookId]);
+    expiryDate.setHours(23, 59, 59, 999); // Check against the end of the expiry day
+
+    if (expiryDate < new Date()) {
+      return ACCESS_STATUS.EXPIRED;
+    }
+    */
+    return ACCESS_STATUS.GRANTED;
   }, [books]);
 
   const getExpiry = useCallback((bookId: string): Date | null => {
@@ -216,10 +229,11 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
     loading,
     login,
     logout,
+    books,
     hasAccess,
     getExpiry,
     getAllAccess
-  }), [user, loading, login, logout, hasAccess, getExpiry, getAllAccess]);
+  }), [user, loading, login, logout, books, hasAccess, getExpiry, getAllAccess]);
 
   return (
     <AuthContext.Provider value={value}>
