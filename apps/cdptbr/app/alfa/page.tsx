@@ -40,7 +40,7 @@ export default function Page() {
           A proposta deste material é destacar o valor do nome próprio como ponto de partida significativo no processo de alfabetização.
         </>
       ),
-      link: 'https://criatividade.digital/alfabetizar/docs',
+      link: 'https://criatividade.digital/importancia-nome-alfabetizacao/',
       visible: false, 
       requiredAccess: '', // no restriction
     },
