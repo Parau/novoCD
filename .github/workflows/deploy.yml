@@ -1,13 +1,21 @@
 # Nome do seu workflow, aparecerá na aba "Actions" do GitHub
-name: Deploy cdptbr and Web to GitHub Pages
+name: Deploy cdptbr and cdenus to GitHub Pages
 
-# Gatilho: Este workflow roda sempre que houver um push na branch 'main'
+# Gatilho: Este workflow roda apenas quando acionado manualmente
 on:
-  push:
-    branches:
-      - main
   # Permite que você rode este workflow manualmente também
   workflow_dispatch:
+    # Adiciona inputs para que você possa escolher qual projeto publicar
+    inputs:
+      project_to_deploy:
+        description: 'Qual projeto você quer publicar?'
+        required: true
+        default: 'cdptbr'
+        type: choice
+        options:
+          - cdptbr
+          - cdenus
+          - both
 
 # Permissões para os jobs
 permissions:
@@ -16,7 +24,9 @@ permissions:
 jobs:
   # --- JOB PARA PUBLICAR O SITE 'cdptbr' ---
   deploy-cdptbr:
-    name: Deploy cdptbr to 'testedocs' repo
+    name: Deploy cdptbr to 'parau.github.io' repo
+    # Roda este job apenas se a opção 'cdptbr' ou 'both' for selecionada
+    if: github.event.inputs.project_to_deploy == 'cdptbr' || github.event.inputs.project_to_deploy == 'both'
     runs-on: ubuntu-latest
     env:
       NEXT_PUBLIC_FIREBASE_API_KEY: ${{ secrets.NEXT_PUBLIC_FIREBASE_API_KEY }}
