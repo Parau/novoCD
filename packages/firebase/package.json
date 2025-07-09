@@ -1,0 +1,19 @@
+{
+  "name": "@repo/firebase",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    "./AuthContext": "./src/AuthContext.tsx"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "@mantine/notifications": "^8.1.1",
+    "@repo/utils": "workspace:*",
+    "firebase": "^11.9.1",
+    "next": "^15.3.0",
+    "react": "^19.1.0"
+  }
+}
+

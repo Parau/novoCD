@@ -72,6 +72,79 @@ importers:
       '@repo/analytics':
         specifier: workspace:*
         version: link:../../packages/analytics
+      '@repo/firebase':
+        specifier: workspace:*
+        version: link:../../packages/firebase
+      '@repo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
+      '@tabler/icons-react':
+        specifier: ^3.34.0
+        version: 3.34.0(react@19.1.0)
+      next:
+        specifier: ^15.3.0
+        version: 15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2)
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+    devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@storybook/react':
+        specifier: ^9.0.13
+        version: 9.0.13(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(storybook@9.0.13(@testing-library/dom@10.4.0)(prettier@3.6.0))(typescript@5.8.2)
+      '@types/node':
+        specifier: ^22.15.3
+        version: 22.15.32
+      '@types/react':
+        specifier: 19.1.0
+        version: 19.1.0
+      '@types/react-dom':
+        specifier: 19.1.1
+        version: 19.1.1(@types/react@19.1.0)
+      eslint:
+        specifier: ^9.29.0
+        version: 9.29.0
+      firebase:
+        specifier: ^11.9.1
+        version: 11.9.1
+      postcss:
+        specifier: ^8.5.5
+        version: 8.5.6
+      postcss-preset-mantine:
+        specifier: 1.17.0
+        version: 1.17.0(postcss@8.5.6)
+      postcss-simple-vars:
+        specifier: ^7.0.1
+        version: 7.0.1(postcss@8.5.6)
+      typescript:
+        specifier: 5.8.2
+        version: 5.8.2
+
+  apps/eventos:
+    dependencies:
+      '@mantine/core':
+        specifier: 8.1.1
+        version: 8.1.1(@mantine/hooks@8.1.1(react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@mantine/hooks':
+        specifier: 8.1.1
+        version: 8.1.1(react@19.1.0)
+      '@mantine/notifications':
+        specifier: ^8.1.1
+        version: 8.1.1(@mantine/core@8.1.1(@mantine/hooks@8.1.1(react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(@mantine/hooks@8.1.1(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@next/third-parties':
+        specifier: ^15.3.4
+        version: 15.3.4(next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2))(react@19.1.0)
+      '@repo/analytics':
+        specifier: workspace:*
+        version: link:../../packages/analytics
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -183,6 +256,24 @@ importers:
         specifier: ^8.34.0
         version: 8.35.0(eslint@9.29.0)(typescript@5.8.2)
 
+  packages/firebase:
+    dependencies:
+      '@mantine/notifications':
+        specifier: ^8.1.1
+        version: 8.1.1(@mantine/core@8.1.1(@mantine/hooks@8.1.1(react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(@mantine/hooks@8.1.1(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@repo/utils':
+        specifier: workspace:*
+        version: link:../utils
+      firebase:
+        specifier: ^11.9.1
+        version: 11.9.1
+      next:
+        specifier: ^15.3.0
+        version: 15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2)
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+
   packages/typescript-config: {}
 
   packages/ui:
@@ -218,6 +309,8 @@ importers:
       typescript:
         specifier: 5.8.2
         version: 5.8.2
+
+  packages/utils: {}
 
 packages:
 

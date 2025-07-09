@@ -1,0 +1,12 @@
+{
+  "name": "@repo/utils",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    "./path": "./src/path.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0"
+  }
+}
+

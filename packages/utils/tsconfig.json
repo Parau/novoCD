@@ -1,0 +1,9 @@
+{
+  // A melhor prática é estender de um tsconfig base do monorepo.
+  // Se você não tiver um, pode começar estendendo o do Next.js diretamente.
+  "extends": "@repo/typescript-config/react-library.json", // Ou next/core-web-vitals 
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"]
+  }
+}
+

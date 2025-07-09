@@ -31,7 +31,8 @@ import { useDisclosure } from '@mantine/hooks';
 import { useRouter, usePathname } from 'next/navigation';
 import { CriatividadeDigitalLogo } from './CriatividadeDigitalLogo';
 import classes from './HeaderCD.module.css';
-import { useAuth } from '../firebase/AuthContext'; 
+//import { useAuth } from '../firebase/AuthContext'; 
+import { useAuth } from '@repo/firebase/AuthContext';
 
 const LogoutButton =  ({ onLogout }: { onLogout: () => void }) => (
   <Anchor

@@ -3,8 +3,10 @@
 import { ReactNode } from 'react';
 import { MantineProvider } from '@mantine/core';
 import { Notifications } from '@mantine/notifications';
-import { AuthContextProvider } from '../firebase/AuthContext';
+//import { AuthContextProvider } from '../firebase/AuthContext';
+import { AuthContextProvider } from '@repo/firebase/AuthContext';
 import { theme } from './theme';
+import nextConfig from '../next.config.js';
 
 
 export function Providers({ children }: { children: ReactNode }) {
@@ -15,7 +17,7 @@ export function Providers({ children }: { children: ReactNode }) {
   return (
     <MantineProvider theme={theme}>
         <Notifications />
-        <AuthContextProvider>
+        <AuthContextProvider basePath={nextConfig.basePath}>
             {children}
         </AuthContextProvider>
     </MantineProvider>

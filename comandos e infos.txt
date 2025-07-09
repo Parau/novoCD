@@ -16,4 +16,4 @@ O visual studio code reclama da sintaxe do postCSS (@mixin) com o arquivo na ext
 "css.lint.unknownAtRules": "ignore"
 
 
-
+pnpm dev --filter cdptbr

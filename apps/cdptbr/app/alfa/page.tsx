@@ -3,7 +3,8 @@ import { useEffect } from 'react';
 import { Text, Breadcrumbs, Anchor, Card, Image, Group, Button, SimpleGrid } from '@mantine/core';
 import { IconHomeFilled } from '@tabler/icons-react';
 import { HeaderCD } from '../../components/HeaderCD';
-import { useAuth, ACCESS_STATUS } from '../../firebase/AuthContext';
+//import { useAuth, ACCESS_STATUS } from '../../firebase/AuthContext';
+import { useAuth, ACCESS_STATUS } from '@repo/firebase/AuthContext';
 import { LoginPrompt } from '../../components/LoginPrompt';
 import classes from './card.module.css';
 

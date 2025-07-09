@@ -1,6 +1,7 @@
 "use client";
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useAuth  } from '../../firebase/AuthContext';
+//import { useAuth  } from '../../firebase/AuthContext';
+import { useAuth  } from '@repo/firebase/AuthContext';
 import { AuthenticationForm } from '../../components/AuthenticationForm/AuthenticationForm';  
 
 export default function LoginPage()  {
