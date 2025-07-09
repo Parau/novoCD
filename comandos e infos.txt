@@ -17,3 +17,5 @@ O visual studio code reclama da sintaxe do postCSS (@mixin) com o arquivo na ext
 
 
 pnpm dev --filter cdptbr
+
+pnpm build:cdptbr
