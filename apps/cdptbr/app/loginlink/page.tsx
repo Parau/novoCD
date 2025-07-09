@@ -4,7 +4,8 @@ import { useRouter } from 'next/navigation';
 import { isSignInWithEmailLink, signInWithEmailLink } from 'firebase/auth';
 import { showNotification } from '@mantine/notifications';
 import { Center, Text, Loader } from '@mantine/core';
-import { auth  } from '../../firebase/config';
+//import { auth  } from '../../firebase/config';
+import { auth  } from '@repo/firebase/config';
 
 export default function LoginLinkPage() {
   const router = useRouter();
