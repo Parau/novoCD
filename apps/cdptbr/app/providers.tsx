@@ -17,7 +17,7 @@ export function Providers({ children }: { children: ReactNode }) {
   return (
     <MantineProvider theme={theme}>
         <Notifications />
-        <AuthContextProvider basePath={nextConfig.basePath}>
+        <AuthContextProvider basePath={nextConfig.basePath ?? ''}>
             {children}
         </AuthContextProvider>
     </MantineProvider>
