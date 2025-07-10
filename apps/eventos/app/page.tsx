@@ -44,6 +44,29 @@ export default function HomePage() {
   const basePath = nextConfig.basePath || '';
   const { user } = useAuth();
 
+  const eventInfo = [
+    {
+      icon: IconCalendar,
+      label: 'Data',
+      value: '29 Mar - 20h00'
+    },
+    {
+      icon: IconClock,
+      label: 'Duração',
+      value: '1h 30min'
+    },
+    {
+      icon: IconUser,
+      label: 'Inscrição',
+      value: 'GRATUITA'
+    },
+    {
+      icon: IconMapPin,
+      label: 'Local',
+      value: '100% online'
+    }
+  ];
+
   const workshopModules = [
     {
       id: 'module-1',
@@ -135,6 +158,8 @@ export default function HomePage() {
         className={classes.hero}
         style={{
           backgroundImage: `url(${basePath}/img/hero-bg.jpg)`,
+          height: "100vh",
+           minHeight: "700px"
         }}
       >
         <Overlay
@@ -184,42 +209,17 @@ export default function HomePage() {
           </Text>
 
           <Grid className={classes.infosEvento} mt="lg">
-            <Grid.Col span={3}>
-              <Stack align="center" gap="xs">
-                <Group>
-                  <IconCalendar size={24} />
-                  <Text size="sm">Data</Text>
-                </Group>
-                <Text fw={500}>29 Mar - 20h00</Text>
-              </Stack>
-            </Grid.Col>
-            <Grid.Col span={3}>
-              <Stack align="center" gap="xs">
-                <Group>
-                  <IconClock size={24} />
-                  <Text size="sm">Duração</Text>
-                </Group>
-                <Text fw={500}>1h 30min</Text>
-              </Stack>
-            </Grid.Col>
-            <Grid.Col span={3}>
-              <Stack align="center" gap="xs">
-                <Group>
-                  <IconUser size={24} />
-                  <Text size="sm">Inscrição</Text>
-                </Group>
-                <Text fw={500}>GRATUITA</Text>
-              </Stack>
-            </Grid.Col>
-            <Grid.Col span={3}>
-              <Stack align="center" gap="xs">
-                <Group>
-                  <IconMapPin size={24} />
-                  <Text size="sm">Local</Text>
-                </Group>
-                <Text fw={500}>100% online</Text>
-              </Stack>
-            </Grid.Col>
+            {eventInfo.map((info, index) => (
+              <Grid.Col key={index} span={3}>
+                <Stack align="center" gap="xs">
+                  <Box style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: 8 }}>
+                    <info.icon color="orange" size={24} />
+                    <Text ta="center"  size="sm">{info.label}</Text>
+                  </Box>
+                  <Text ta="center" c="yellow" fw={500}>{info.value}</Text>
+                </Stack>
+              </Grid.Col>
+            ))}
           </Grid>
 
           <Button
