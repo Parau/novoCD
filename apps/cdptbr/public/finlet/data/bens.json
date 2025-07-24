@@ -1,0 +1,32 @@
+[
+  {
+    "nome": "Viagem de Férias",
+    "valor": 8000,
+    "fator_inflacao_item": 0.5
+  },
+  {
+    "nome": "Celular Top de Linha",
+    "valor": 4000,
+    "fator_inflacao_item": -0.5
+  },
+  {
+    "nome": "Smart TV LED 32\" Full HD",
+    "valor": 949.15,
+    "fator_inflacao_item": 1
+  },
+  {
+    "nome": "Notebook Gamer",
+    "valor": 6000,
+    "fator_inflacao_item": -0.2
+  },
+  {
+    "nome": "Móveis para Casa",
+    "valor": 12000,
+    "fator_inflacao_item": 0.8
+  },
+  {
+    "nome": "Curso de Especialização",
+    "valor": 5000,
+    "fator_inflacao_item": 1.2
+  }
+]

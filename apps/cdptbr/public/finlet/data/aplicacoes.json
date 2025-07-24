@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "Tesouro Selic",
+    "nome_curto": "Selic",
+    "fator_cdi": 1.0,
+    "exemplo": true 
+  },
+  {
+    "nome": "Poupança",
+    "nome_curto": "Poupança",
+    "fator_cdi": 0.7,
+    "exemplo": false
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "inflacao_mensal": 0.0024, 
+  "taxa_selic_anual": 0.15,
+  "CDI_anual": 0.1490,
+  "_link_selic": "https://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/mercado-de-derivativos/indicadores/indicadores-financeiros/",
+  "_link_inflacao": "https://www.ibge.gov.br/explica/inflacao.php"
+}

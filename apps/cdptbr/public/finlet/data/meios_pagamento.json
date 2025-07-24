@@ -1,0 +1,22 @@
+[
+  {
+    "nome": "Crediário",
+    "nome_curto": "Crediário",
+    "taxa_juros_mensal": 0.1011
+  },
+  {
+    "nome": "Consignado",
+    "nome_curto": "Consignado",
+    "taxa_juros_mensal": 0.027
+  },
+  {
+    "nome": "Rotativo do Cartão de Crédito",
+    "nome_curto": "Rotativo",
+    "taxa_juros_mensal": 0.189
+  },
+  {
+    "nome": "À vista (Parcelamento no Cartão)",
+    "nome_curto": "Parcelado\nCartão",
+    "taxa_juros_mensal": 0.017
+  }
+]
