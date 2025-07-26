@@ -4,6 +4,7 @@ import {
   IconBlocks,
   IconWritingSign,
   IconLego,
+  IconRobot,
 } from '@tabler/icons-react';
 import {
   Card,
@@ -21,6 +22,7 @@ const mockdata = [
   { title: 'Alfabetização', icon: IconWritingSign, color: 'violet', target: "", link: '/alfa/' },
   { title: 'Construções Criativas', icon: IconBlocks, color: 'indigo', target: "_blank", link: 'https://criatividade.digital/CCriativas/' },
   { title: 'Dicas LEGO® SPIKE™ Prime', icon: IconLego, color: 'blue', target: "_blank", link: 'https://lego.criatividade.digital/dicas/' },
+  { title: 'Inteligência Artificial', icon: IconRobot, color: 'teal', target: "", link: '/ia/' },
 
 ];
 
@@ -57,7 +59,7 @@ export function GuidesNTools() {
         </Anchor>
         */}
       </Group>
-      <SimpleGrid cols={3} mt="xs">
+      <SimpleGrid cols={4} mt="xs">
         {items}
       </SimpleGrid>
     </Card>

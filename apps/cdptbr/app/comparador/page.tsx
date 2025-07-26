@@ -2,7 +2,8 @@
 
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import Script from 'next/script';
-import { Container, Paper, Box, Text, Title } from '@mantine/core';
+import { Container, Paper, Box, Text, Breadcrumbs, Anchor } from '@mantine/core';
+import { IconHomeFilled } from '@tabler/icons-react';
 
 // --- Componente Principal da Página ---
 export default function PaginaComparador() {
@@ -53,7 +54,7 @@ Cole aqui a versão editada do seu texto.`;
         onError={(e) => console.error('Erro ao carregar Mergely:', e)}
       />
 
-      <Container size="2xl" px="md" py="xl" style={{ minHeight: '100vh', background: '#f9fafb' }}>
+      <Container size="2xl" px="md" py="xl" style={{ minHeight: '100vh', background: '#ffffffff' }}>
 
 
         {/* Adicionando o CSS do Mergely via link */}
@@ -64,7 +65,7 @@ Cole aqui a versão editada do seu texto.`;
         />
 
         {/* O componente Mergely é renderizado aqui */}
-        <Paper shadow="lg" radius="md" withBorder p={0}>
+        <Paper >
           <MergelyEditor
             textoEsquerda={textoEsquerda}
             textoDireita={textoDireita}
@@ -129,7 +130,7 @@ function MergelyEditor({
         const leftText = (textoEsquerda !== null && textoEsquerda !== undefined) ? String(textoEsquerda) : '';
         const rightText = (textoDireita !== null && textoDireita !== undefined) ? String(textoDireita) : '';
 
-        console.log('Inicializando Mergely com:', { leftText, rightText }); // Debug
+        //console.log('Inicializando Mergely com:', { leftText, rightText }); // Debug
 
         const mergelyInstance = new (window as any).Mergely(mergelyRef.current, {
           height: altura,
@@ -149,13 +150,13 @@ function MergelyEditor({
           lhs: function(setValue: (value: string) => void) {
             // Verificação adicional antes de chamar setValue
             const safeValue = leftText || '';
-            console.log('Setting left text:', safeValue); // Debug
+            //console.log('Setting left text:', safeValue); // Debug
             setValue(safeValue);
           },
           rhs: function(setValue: (value: string) => void) {
             // Verificação adicional antes de chamar setValue
             const safeValue = rightText || '';
-            console.log('Setting right text:', safeValue); // Debug
+            //console.log('Setting right text:', safeValue); // Debug
             setValue(safeValue);
           },
         });
@@ -176,7 +177,7 @@ function MergelyEditor({
                   typeof leftEditor.on === 'function' && 
                   typeof rightEditor.on === 'function') {
                 
-                console.log('Adicionando listeners...'); // Debug
+                //console.log('Adicionando listeners...'); // Debug
                 
                 leftEditor.on('change', (cm: any) => {
                   const value = cm.getValue();
@@ -188,7 +189,7 @@ function MergelyEditor({
                   setTextoDireita(value || '');
                 });
                 
-                console.log('Listeners adicionados com sucesso!'); // Debug
+                //console.log('Listeners adicionados com sucesso!'); // Debug
               } else {
                 console.warn('Editores ainda não estão prontos');
               }
@@ -243,13 +244,20 @@ function MergelyEditor({
   }, [altura, isInitialized]);
 
   return (
+    <>
+    <Breadcrumbs separator=">" separatorMargin="xs" mt={0} mb="xs">
+      <Anchor href="/">
+        <IconHomeFilled size={18} color="black" />
+      </Anchor>
+      <Anchor href="/ia">Inteligência Artificial</Anchor>
+    </Breadcrumbs>
     <Box
       ref={mergelyRef}
       style={{
         height: altura,
         minHeight: altura,
         width: '100%',
-        border: '1px solid #e5e7eb',
+        //border: '1px solid #e5e7eb',
         borderRadius: 12,
         overflow: 'hidden',
         background: '#fff',
@@ -273,5 +281,6 @@ function MergelyEditor({
         </Box>
       )}
     </Box>
+    </>
   );
 }

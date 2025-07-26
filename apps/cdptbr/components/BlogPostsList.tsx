@@ -103,8 +103,12 @@ const mockdata = [
   },
 ];
 
-export function BlogPostsList() {
-  const cards = mockdata.map((post) => (
+export function BlogPostsList({ categories }: { categories?: string[] }) {
+  const filteredData = categories && categories.length > 0
+    ? mockdata.filter(post => categories.includes(post.category))
+    : mockdata;
+
+  const cards = filteredData.map((post) => (
     <Card key={post.id} withBorder radius="md" p="md" shadow="sm">
       <CardSection>
         <Image src={post.image} height={180} alt={post.title} />
