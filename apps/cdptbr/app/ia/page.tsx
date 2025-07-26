@@ -174,6 +174,7 @@ export default function Page() {
 
       {/*<FerramentaButton />*/}
 
+{/*
       <Text size="xl" mt={12} mb={4}>
         Guias
       </Text>
@@ -222,6 +223,8 @@ export default function Page() {
           </Card>
         ))}
       </SimpleGrid>
+*/}
+      
       <Text size="xl" mt={12} mb={4}>Últimas publicações</Text>
       <BlogPostsList categories={["IA"]} />
     </>
