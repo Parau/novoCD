@@ -250,6 +250,7 @@ function MergelyEditor({
         <IconHomeFilled size={18} color="black" />
       </Anchor>
       <Anchor href="/ia">Inteligência Artificial</Anchor>
+      Comparador
     </Breadcrumbs>
     <Box
       ref={mergelyRef}
