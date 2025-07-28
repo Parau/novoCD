@@ -100,20 +100,19 @@ export default function Page() {
   const cardsData = [
     {
       id: 1,
-      imageSrc: '/GuidesNTools/thumbs/plano-aula.jpg',
-      imageAlt: 'Plano de aula livro O Nome da Gente',
-      title: 'Planos de aula ONDG',
+      imageSrc: '/GuidesNTools/thumbs/GPT-estrategico.jpg',
+      imageAlt: 'ChatGPT Estratégico',
+      title: 'ChatGPT Estratégico',
       description: (
         <>
-          Este guia apresenta três situações didáticas elaboradas para o trabalho com o livro{' '}
-          <i>O Nome da Gente</i>.
+          Domine o uso estratégico do ChatGPT no ambiente corporativo.
         </>
       ),
-      link: 'https://criatividade.digital/ondg-planos/',
+      link: '/ChatGPT-IEL/',
       visible: false, 
       requiredAccess: '0', // Restrict access to users with ONDG license
     },
-    {
+    /*{
       id: 2,
       imageSrc: '/GuidesNTools/thumbs/importancia-nome-alfabetizacao.jpg', // Placeholder image
       imageAlt: 'Guia a importância do nome na alfabetização',
@@ -140,7 +139,7 @@ export default function Page() {
       link: 'https://criatividade.digital/alfabetizar/docs/lenga-lenga/apresentacao',
       visible: false, 
       requiredAccess: '', // no restriction
-    },
+    },*/
   ];
 
   // Filter cards based on user access
@@ -174,10 +173,11 @@ export default function Page() {
 
       {/*<FerramentaButton />*/}
 
-{/*
-      <Text size="xl" mt={12} mb={4}>
-        Guias
-      </Text>
+      {filteredCards.length > 0 && (
+        <Text size="xl" mt={12} mb={4}>
+          Guias
+        </Text>
+      )}
       <SimpleGrid cols={{ base: 1, sm: 2, md: 3, lg: 4 }} spacing="lg">
         {filteredCards.map((card) => (
           <Card
@@ -223,7 +223,6 @@ export default function Page() {
           </Card>
         ))}
       </SimpleGrid>
-*/}
       
       <Text size="xl" mt={12} mb={4}>Últimas publicações</Text>
       <BlogPostsList categories={["IA"]} />
