@@ -57,6 +57,7 @@ jobs:
       - name: 5. Deploy para o repositório 'parau.github.io'
         uses: peaceiris/actions-gh-pages@v4
         with:
+          force_orphan: true # substitui todo o conteúdo da branch gh-pages de uma só vez
           # O PAT que você criou e salvou nos secrets
           personal_token: ${{ secrets.PAT_PARA_DEPLOY }}
           # O repositório de destino
