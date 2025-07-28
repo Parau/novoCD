@@ -37,7 +37,7 @@ jobs:
       NEXT_PUBLIC_FIREBASE_APP_ID: ${{ secrets.NEXT_PUBLIC_FIREBASE_APP_ID }}
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
-      TURBO_REMOTE_ONLY: true 
+      TURBO_CACHE: remote:rw
     steps:
       - name: 1. Checkout do código do monorepo
         uses: actions/checkout@v4
