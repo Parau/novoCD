@@ -50,10 +50,6 @@ jobs:
 
       - name: 3. Instalar dependências
         run: pnpm install
-        env:
-          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-          TURBO_TEAM: ${{ vars.TURBO_TEAM }}
-          TURBO_CACHE: remote:rw
       
       - name: Debug Turbo Vars
         run: |
@@ -71,6 +67,10 @@ jobs:
 
       - name: 4. Construir (build) APENAS o aplicativo 'cdptbr'
         run: pnpm turbo build --filter=cdptbr
+        env:
+          TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+          TURBO_TEAM: ${{ vars.TURBO_TEAM }}
+          TURBO_CACHE: remote:rw
 
       - name: 5. Deploy para o repositório 'parau.github.io'
         uses: peaceiris/actions-gh-pages@v4
