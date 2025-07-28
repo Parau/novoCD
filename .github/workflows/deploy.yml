@@ -51,20 +51,6 @@ jobs:
       - name: 3. Instalar dependências
         run: pnpm install
       
-      - name: Debug Turbo Vars
-        run: |
-          if [ -n "${{ secrets.TURBO_TOKEN }}" ]; then
-            echo "✅ TURBO_TOKEN está definido."
-          else
-            echo "❌ ERRO: TURBO_TOKEN não foi encontrado nos secrets."
-          fi
-          
-          if [ -n "${{ vars.TURBO_TEAM }}" ]; then
-            echo "✅ TURBO_TEAM (Variable) = ${{ vars.TURBO_TEAM }}"
-          else
-            echo "❌ ERRO: TURBO_TEAM não foi encontrado nas variáveis do repositório."
-          fi
-
       - name: 4. Construir (build) APENAS o aplicativo 'cdptbr'
         run: pnpm turbo build --filter=cdptbr
         env:
