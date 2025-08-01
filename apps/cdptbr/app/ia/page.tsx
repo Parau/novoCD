@@ -110,7 +110,7 @@ export default function Page() {
       ),
       link: '/ChatGPT-IEL/',
       visible: false, 
-      requiredAccess: '0', // Restrict access to users with ONDG license
+      requiredAccess: '1', // Restrict access to users with ONDG license
     },
     /*{
       id: 2,
@@ -165,7 +165,7 @@ export default function Page() {
         </Anchor>
         Inteligência Artificial
       </Breadcrumbs>
-      {!user && <LoginPrompt redirectPath="/alfa" />}
+      {!user && <LoginPrompt redirectPath="/ia" />}
 
       {/*<FerramentaAlert />*/}
 
