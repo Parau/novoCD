@@ -1,15 +1,5 @@
 [
   {
-    "nome": "Viagem de Férias",
-    "valor": 8000,
-    "fator_inflacao_item": 1
-  },
-  {
-    "nome": "Celular Top de Linha",
-    "valor": 6000,
-    "fator_inflacao_item": 1
-  },
-  {
     "nome": "Smart TV LED 32\" Full HD",
     "valor": 949.15,
     "fator_inflacao_item": 1
@@ -20,13 +10,23 @@
     "fator_inflacao_item": 1
   },
   {
-    "nome": "Móveis para Casa",
-    "valor": 12000,
+    "nome": "Geladeira Frost Free 2 portas",
+    "valor": 5900,
     "fator_inflacao_item": 1
   },
   {
-    "nome": "Geladeira Frost Free 2 portas",
-    "valor": 5900,
+    "nome": "Celular Top de Linha",
+    "valor": 6000,
+    "fator_inflacao_item": 1
+  },
+  {
+    "nome": "Viagem de Férias",
+    "valor": 8000,
+    "fator_inflacao_item": 1
+  },
+  {
+    "nome": "Móveis para Casa",
+    "valor": 12000,
     "fator_inflacao_item": 1
   }
 ]
