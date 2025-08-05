@@ -2,12 +2,12 @@
   {
     "nome": "Viagem de Férias",
     "valor": 8000,
-    "fator_inflacao_item": 0.5
+    "fator_inflacao_item": 1
   },
   {
     "nome": "Celular Top de Linha",
-    "valor": 4000,
-    "fator_inflacao_item": -0.5
+    "valor": 6000,
+    "fator_inflacao_item": 1
   },
   {
     "nome": "Smart TV LED 32\" Full HD",
@@ -16,17 +16,17 @@
   },
   {
     "nome": "Notebook Gamer",
-    "valor": 6000,
-    "fator_inflacao_item": -0.2
+    "valor": 5500,
+    "fator_inflacao_item": 1
   },
   {
     "nome": "Móveis para Casa",
     "valor": 12000,
-    "fator_inflacao_item": 0.8
+    "fator_inflacao_item": 1
   },
   {
-    "nome": "Curso de Especialização",
-    "valor": 5000,
-    "fator_inflacao_item": 1.2
+    "nome": "Geladeira Frost Free 2 portas",
+    "valor": 5900,
+    "fator_inflacao_item": 1
   }
 ]

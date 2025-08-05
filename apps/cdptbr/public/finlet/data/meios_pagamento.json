@@ -1,22 +1,28 @@
 [
   {
-    "nome": "Crediário",
-    "nome_curto": "Crediário",
-    "taxa_juros_mensal": 0.1011
-  },
-  {
-    "nome": "Consignado",
+    "nome": "Empréstimo Consignado",
     "nome_curto": "Consignado",
     "taxa_juros_mensal": 0.027
   },
   {
+    "nome": "Empréstimo Pessoal",
+    "nome_curto": "Empréstimo",
+    "taxa_juros_mensal": 0.0345
+  },
+  {
+    "nome": "Pix parcelado no Crédito",
+    "nome_curto": "Pix Crédito",
+    "taxa_juros_mensal": 0.0450
+  },
+  {
+    "nome": "Crediário",
+    "nome_curto": "Crediário",
+    "taxa_juros_mensal": 0.1011
+  },
+
+  {
     "nome": "Rotativo do Cartão de Crédito",
     "nome_curto": "Rotativo",
     "taxa_juros_mensal": 0.189
-  },
-  {
-    "nome": "À vista (Parcelamento no Cartão)",
-    "nome_curto": "Parcelado\nCartão",
-    "taxa_juros_mensal": 0.017
   }
 ]
