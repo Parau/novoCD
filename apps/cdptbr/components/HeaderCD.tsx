@@ -2,7 +2,6 @@
 import {
   IconBook,
   IconChartPie3,
-  IconChevronDown,
   IconCode,
   IconCoin,
   IconFingerprint,

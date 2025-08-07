@@ -14,7 +14,6 @@ export const metadata = {
 export default function RootLayout({ children }: { children: any }) {
   return (
     <html lang="pt" {...mantineHtmlProps}>
-      
       <head>
         <ColorSchemeScript />
         <link rel="shortcut icon" href="/favicon.svg" />
@@ -22,12 +21,17 @@ export default function RootLayout({ children }: { children: any }) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2338218428264360"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body>
         <Providers>
-            <Container p="md" pt={0}>
-              {children}
-            </Container>
+          <Container p="md" pt={0}>
+            {children}
+          </Container>
         </Providers>
         <GoogleTagManager gtmId="GTM-WQG5CDQL" />
       </body>
