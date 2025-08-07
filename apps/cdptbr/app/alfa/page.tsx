@@ -7,6 +7,7 @@ import { HeaderCD } from '../../components/HeaderCD';
 import { useAuth, ACCESS_STATUS } from '@repo/firebase/AuthContext';
 import { LoginPrompt } from '../../components/LoginPrompt';
 import classes from './card.module.css';
+import { Footer } from '../../components/Footer';
 
 export default function Page() {
   const { user, hasAccess, getAllAccess } = useAuth();
@@ -134,6 +135,8 @@ export default function Page() {
           </Card>
         ))}
       </SimpleGrid>
+
+      <Footer />
 
     </>
   );

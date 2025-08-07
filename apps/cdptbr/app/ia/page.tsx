@@ -10,6 +10,7 @@ import classes from './card.module.css';
 import { IconArrowsExchange, IconArrowRight } from '@tabler/icons-react';
 import Link from 'next/link';
 import { BlogPostsList } from '../../components/BlogPostsList';
+import { Footer } from '../../components/Footer';
 
 function FerramentaButton() {
   return (
@@ -226,6 +227,8 @@ export default function Page() {
       
       <Text size="xl" mt={12} mb={4}>Últimas publicações</Text>
       <BlogPostsList categories={["IA"]} />
+
+      <Footer />
     </>
   );
 }

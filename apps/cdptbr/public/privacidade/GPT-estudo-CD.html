@@ -89,7 +89,6 @@
 </html>
 
   <script>
-    // Técnica de obfuscação menos óbvia
     const parts = ['criatividade', 'digital', 'gpt'];
     const domain = parts[0] + '.' + parts[1];
     const box = parts[2] + '@' + domain;
@@ -99,7 +98,6 @@
     clickable.href = 'mailto:' + box;
     clickable.textContent = box;
 
-    // Substitui o conteúdo do span pela âncora clicável
     span.textContent = '';
     span.appendChild(clickable);
   </script>
