@@ -17,14 +17,23 @@ O visual studio code reclama da sintaxe do postCSS (@mixin) com o arquivo na ext
 
 
 pnpm dev --filter cdptbr
-pnpm dev --filter eventos
 pnpm build:cdptbr
+
+pnpm dev --filter eventos
+
+pnpm  --filter blogptbr dev
+pnpm install unist-util-visit --filter blogptbr
+pnpm install -D @types/unist --filter blogptbr
+pnpm install --filter blogptbr
+pnpm  --filter blogptbr build
+
 
 
 
 pnpm add next@14.2.18 @next/mdx@14.2.18 --filter cdptbr
 pnpm update @next/mdx @next/third-parties next next-mdx-remote --filter cdptbr
 pnpm remove next @next/mdx --filter cdptbr
+
 
 
 

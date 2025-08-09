@@ -1,0 +1,46 @@
+---
+title: "Terceiro Post: Usando MDX"
+date: "2024-01-25"
+excerpt: "Este é um exemplo de post usando MDX com componentes React."
+---
+
+export const CustomComponent = ({ children }) => (
+  <div style={{ 
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    color: 'white',
+    padding: '1rem',
+    borderRadius: '0.5rem',
+    margin: '1rem 0'
+  }}>
+    {children}
+  </div>
+);
+
+# Bem-vindo ao MDX!
+
+Este é um post escrito em **MDX**, que permite combinar Markdown com componentes React.
+
+## Exemplo de Componente React
+
+<CustomComponent>
+  Este é um componente React personalizado renderizado dentro do MDX!
+</CustomComponent>
+
+## Funcionalidades do MDX
+
+- Markdown tradicional funciona normalmente
+- Você pode usar **negrito** e *itálico*
+- Listas também funcionam
+- E ainda pode adicionar componentes React!
+
+### Código
+
+Aqui está um exemplo de código:
+
+```javascript
+const exemplo = () => {
+  console.log('Olá do MDX!');
+};
+```
+
+Isso mostra o poder do MDX para criar conteúdo rico e interativo!
