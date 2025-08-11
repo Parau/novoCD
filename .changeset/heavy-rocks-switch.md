@@ -2,4 +2,4 @@
 "blogptbr": patch
 ---
 
-alteracao do jules
+alterado pelo jules 2
