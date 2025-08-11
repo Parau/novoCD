@@ -40,3 +40,20 @@ pnpm changeset version
 
 
 
+===========
+## Example Task for Jules
+Here’s how you might phrase a task to ensure Jules follows your monorepo's versioning process:
+
+Task: Fix the image loading bug in the blogptbr component library. The images are not resizing correctly on mobile screens.
+
+Instructions:
+
+Navigate to the packages/blogptbr directory and correct the CSS for the ResponsiveImage component.
+
+After you have fixed the code, run the command pnpm changeset in the terminal.
+
+When prompted, select the blogptbr package for a patch update.
+
+For the summary, please write: "Fix image resizing on mobile devices."
+
+Finally, create a pull request with both the code changes and the new file in the .changeset directory.
