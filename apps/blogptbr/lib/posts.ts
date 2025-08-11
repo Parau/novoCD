@@ -9,6 +9,7 @@ export interface Post {
   title: string;
   date: string;
   excerpt: string;
+  thumb: string;
   content: string;
   isMdx: boolean;
 }
@@ -33,6 +34,7 @@ export async function getAllPosts(): Promise<Post[]> {
         title: data.title || slug,
         date: data.date || '',
         excerpt: data.excerpt || '',
+        thumb: data.thumb || '',
         content,
         isMdx,
       };
@@ -62,6 +64,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
       title: data.title || slug,
       date: data.date || '',
       excerpt: data.excerpt || '',
+      thumb: data.thumb || '',
       content,
       isMdx,
     };
