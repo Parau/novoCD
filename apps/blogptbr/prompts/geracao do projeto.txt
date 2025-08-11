@@ -1,0 +1,74 @@
+trocamos muitas ideias aqui. Então agora quero afunilar tudo que conversamos em um projeto nextjs do tipo app router que implementa um blog. Gere todos os arquivos necessários para o projeto.  Este projeto de site blog vai ficar dentro de um projeto maior que está organizado no formato mono repo usando o turborepo. Se estiver faltando alguma informação para gerar o projeto por favor pergunte antes de gerar.
+Seguem os requisitos.
+* Projeto nexjs do tipo app router.
+* Usa o framework mantine
+* @next/mdx + gray-matter para os posts com md e mdx.
+* static generated site.
+* otimizado ao máximo para que gere a página no static generated ficando o mínimo no Client-Side Rendering.
+* Vou hospedá-lo no github pages publicando usando github actions
+* Layout responsivo com três tamanhos conforme imagem anexada. 
+  - Tamanho 1 - displays grandes: A opção que tem a imagem a esquerda com o título ao lado direito da imagem é para displays grandes como o de computadores desktops. 
+ - Tamanho 2 - display médio: A opção que tem o título no topo, imagem abaixo do título e com um recuo a esquerda (espaço em branco) para displays médios como o dos tablets. 
+ - Tamanho 3 - display pequenos: A opção que tem o título no topo, imagem abaixo do título, sem margem para display de celulares.
+
+=============
+
+1. Monorepo path & tool:
+* apps/blogptbr/
+* Package manager: pnpm
+
+2. GitHub Pages
+* custom domain: criatividade.digital/blog
+* repo name for basePath: /blog
+* trailingSlash: true
+
+3. Node/Next versions
+* Use the recomended version for github actions
+
+4. Blog features
+* Include a /blog index but instead of pagination use a "load more" button
+* Tags pages /blog/tag/<tag>
+* RSS feed
+* Basic sitemap
+* besides rss also generate a json with all the posts. I'll use in to help me fetch the posts lists from other sites I developed.
+
+5. Content structure
+* Posts live at content/posts/
+* allow the use of nested folders but it is only to organize the content. it does not affect the post order whitch is date time from the newest to the oldest
+* allow flexibility in using the folders. if the folder has only one post use the folders name as the slug. If the folder has several posts use the folders name + post file name as the slug.
+* allow flexibility in the image location. The image can be next to the post, in a nested folder or in the nextjs `/public/images/` folder.
+* allow .md and .mdx
+* content structure example
+apps/
+  content/
+    posts/
+      primeiro-post.md (generated slug: /blog/primeiro-post/ )
+      primeiro-post.thumb.jpg
+      segundo-post/ (generated slug: /blog/segundo-post/ )
+        segundo.md
+	segundo.thumb.jpg
+      alfabetizar/
+        iniciacao.md (generated slug: /blog/alfabetizar/iniciacao/ )
+	iniciacao.thumb.jpg
+        aprendendo.md (generated slug: /blog/alfabetizar/aprendendo/ )
+        criando.md (generated slug: /blog/alfabetizar/criando/ )
+      terceiro-post/ (generated slug: /blog/terceiro-post/ )
+        conteudo.md
+	conteudo.thumb.jpg
+	imagem-interna-post01.jpg
+	imagem-interna-post02.jpg
+      quarto-post.md (generated slug: /blog/quarto-post/ )
+* O fontmatter indica qual e qual a localização da imagem do thumb. Por exemplo o frontmatter do segundo-post/segundo.md indicaria `thumb: "./segundo.thumb.jpg"`
+* Mas o frontmatter também poderia indicar que o thumb está em `/public/images/` quando indicar um caminho absoluto. por exemplo `thumb: "/public/images/posts/imagem-compartilhada.jpg"`. Neste caso é importante considerar que o projeto tem um basePath: /blog
+
+6. Design tokens
+* default light Mantine theme
+* use Ubunto font from google font
+
+8. Analytics/3P
+* Keep GTP and AdSense but optimize to minimize client only code.
+
+Final recomendations:
+* Generate the source code using english.
+* Generate te UI using brazilian portuguese
+* The content of the site will be brazilian portuguese.
