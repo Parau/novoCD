@@ -28,14 +28,15 @@ pnpm install --filter blogptbr
 pnpm  --filter blogptbr build
 
 
-
-
 pnpm add next@14.2.18 @next/mdx@14.2.18 --filter cdptbr
 pnpm update @next/mdx @next/third-parties next next-mdx-remote --filter cdptbr
 pnpm remove next @next/mdx --filter cdptbr
 
+## Usando changeset
 
-
+pnpm changeset     //Tem que ter feito o commit
+commit o changeset file
+pnpm changeset version
 
 
 
