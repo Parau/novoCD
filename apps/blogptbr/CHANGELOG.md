@@ -1,5 +1,11 @@
 # blogptbr
 
+## 0.2.2
+
+### Patch Changes
+
+- 799d010: Imagem dentro do markdown
+
 ## 0.2.1
 
 ### Patch Changes
