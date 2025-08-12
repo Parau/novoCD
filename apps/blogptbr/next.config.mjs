@@ -7,7 +7,7 @@ import remarkRewriteImageSrc from './lib/remark-rewrite-image-src.mjs';
 const nextConfig = {
   basePath: '/blog',
   env: {
-    NEXT_PUBLIC_BASE_PATH: '/blog',
+    NEXT_PUBLIC_BASE_PATH: '/blog', /*atenção ao path do remarkRewriteImageSrc publicBase*/
   },
   output: 'export',
   trailingSlash: true,
