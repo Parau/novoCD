@@ -6,7 +6,7 @@ thumb: "/images/thumbs/segundo-post.svg"
 ---
 
 # Explorando o Next.js
-![dentro do post](dentroPost2.svg)
+![dentro do post](./dentroPost2.svg)
 No nosso segundo post, vamos falar sobre algumas funcionalidades interessantes do **Next.js**.
 
 ## App Router
