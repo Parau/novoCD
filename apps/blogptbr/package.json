@@ -20,7 +20,9 @@
     "react-dom": "^18",
     "@mdx-js/loader": "^3.0.0",
     "@mdx-js/react": "^3.0.0",
-    "remark-gfm": "^4.0.0"
+    "remark-gfm": "^4.0.0",
+    "remark-frontmatter": "^4.0.0",
+    "remark-mdx-frontmatter": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
