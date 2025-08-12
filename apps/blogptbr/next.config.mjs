@@ -1,5 +1,7 @@
 import remarkFrontmatter from 'remark-frontmatter';
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
+import remarkCopyLinkedFiles from 'remark-copy-linked-files';
+import remarkRewriteImageSrc from './lib/remark-rewrite-image-src.mjs';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -23,7 +25,14 @@ const nextConfig = {
         {
           loader: '@mdx-js/loader',
           options: {
-            remarkPlugins: [remarkFrontmatter, [remarkMdxFrontmatter, {name: 'matter'}]],
+            remarkPlugins: [
+              remarkFrontmatter,
+              [remarkMdxFrontmatter, { name: 'matter' }],
+              [remarkCopyLinkedFiles, {
+                destinationDir: 'public/images/posts',
+              }],
+              [remarkRewriteImageSrc, { publicBase: '/blog/images/posts' }],
+            ],
             rehypePlugins: [],
           },
         },
