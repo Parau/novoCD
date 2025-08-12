@@ -1,0 +1,46 @@
+name: blogPTBR Manual
+
+on:
+  # Permite que você rode este workflow manualmente também
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm --filter blogptbr build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          force_orphan: true # substitui todo o conteúdo da branch gh-pages de uma só vez
+          # O PAT que você criou e salvou nos secrets
+          personal_token: ${{ secrets.PAT_PARA_DEPLOY }}
+          # O repositório de destino
+          external_repository: Parau/blogptbr
+          # A pasta que contém o resultado do build do 'cdptbr'
+          publish_dir: ./apps/blogptbr/out
+          # A branch no repositório de destino
+          publish_branch: gh-pages
+          # Informações do usuário que fará o commit (o bot)
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: "Deploy cdptbr: ${{ github.event.head_commit.message }}"

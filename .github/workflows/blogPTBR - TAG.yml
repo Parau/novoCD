@@ -1,4 +1,4 @@
-name: Deploy blogPTBR to GitHub Pages
+name: blogPTBR VIA TAG
 
 on:
   push:
