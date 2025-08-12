@@ -9,8 +9,8 @@ export default async function HomePage() {
     <Container size="md" py="xl">
       <Title order={1} mb="xl">Blog PT-BR</Title>
       <Text size="lg" mb="xl">Bem-vindo ao nosso blog!</Text>
-      
-      <PostList posts={posts} />
+
+      <PostList posts={posts} basePath={process.env.NEXT_PUBLIC_BASE_PATH} />
     </Container>
   );
 }

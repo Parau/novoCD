@@ -9,6 +9,9 @@ const withMDX = require('@next/mdx')({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   basePath: '/blog',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: '/blog',
+  },
   output: 'export',
   trailingSlash: true,
   images: {
