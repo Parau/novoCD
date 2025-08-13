@@ -2,7 +2,7 @@
 title: "Segundo Post: Explorando o Next.js"
 date: "2024-01-20"
 excerpt: "Neste segundo post, vamos explorar algumas funcionalidades interessantes do Next.js e como utilizá-las."
-thumb: "/images/thumbs/segundo-post.svg"
+thumb: "./segundo-post.svg"
 ---
 
 # Explorando o Next.js

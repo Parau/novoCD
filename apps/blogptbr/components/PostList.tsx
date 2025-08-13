@@ -7,10 +7,9 @@ import { Post } from '@/lib/posts';
 
 interface PostListProps {
   posts: Post[];
-  basePath?: string; 
 }
 
-export function PostList({ posts, basePath }: PostListProps) {
+export function PostList({ posts }: PostListProps) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
       {posts.map((post) => (
@@ -18,7 +17,7 @@ export function PostList({ posts, basePath }: PostListProps) {
           {post.thumb && (
             <Card.Section>
               <Image
-                src={`${basePath ? basePath : ""}${post.thumb}`}
+                src={post.thumb}
                 alt={post.title}
                 width={400}
                 height={200}
