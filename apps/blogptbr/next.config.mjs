@@ -2,6 +2,7 @@ import remarkFrontmatter from 'remark-frontmatter';
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
 import remarkCopyLinkedFiles from 'remark-copy-linked-files';
 import remarkRewriteImageSrc from './lib/remark-rewrite-image-src.mjs';
+import remarkRewriteThumbFrontmatter from './lib/remark-rewrite-thumb-frontmatter.mjs';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -32,6 +33,7 @@ const nextConfig = {
                 destinationDir: 'public/images/posts',
               }],
               [remarkRewriteImageSrc, { publicBase: '/blog/images/posts' }],
+              [remarkRewriteThumbFrontmatter, { publicBase: '/blog/images/posts', destinationDir: 'public/images/posts' }],
             ],
             rehypePlugins: [],
           },

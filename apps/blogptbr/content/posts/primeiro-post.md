@@ -2,7 +2,7 @@
 title: "Primeiro Post do Blog"
 date: "2024-01-15"
 excerpt: "Este é o primeiro post do nosso blog. Aqui você encontra uma introdução ao que esperamos compartilhar."
-thumb: "/images/thumbs/primeiro-post.svg"
+thumb: "./primeiro-post.svg"
 ---
 
 # Bem-vindos ao Blog PT-BR!

@@ -10,7 +10,7 @@ export default async function HomePage() {
       <Title order={1} mb="xl">Blog PT-BR</Title>
       <Text size="lg" mb="xl">Bem-vindo ao nosso blog!</Text>
 
-      <PostList posts={posts} basePath={process.env.NEXT_PUBLIC_BASE_PATH} />
+      <PostList posts={posts} />
     </Container>
   );
 }
