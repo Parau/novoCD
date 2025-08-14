@@ -7,6 +7,7 @@ const postsDirectory = path.join(process.cwd(), 'content/posts');
 
 export interface Post {
   slug: string;
+  source: string;
   title: string;
   date: string;
   excerpt: string;
@@ -36,65 +37,94 @@ function processThumb(thumb: string, postDir: string): string {
   return path.posix.join(base.replace(/\/$/, ''), filename);
 }
 
+function normalizeSegment(segment: string): string {
+  return segment
+    .normalize('NFD')
+    .replace(/[\.\s]+/g, '-')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9-]/g, '')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
 export async function getAllPosts(): Promise<Post[]> {
   if (!fs.existsSync(postsDirectory)) {
     return [];
   }
 
-  const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = fileNames
-    .filter((name) => name.endsWith('.md') || name.endsWith('.mdx'))
-    .map((fileName) => {
-      const slug = fileName.replace(/\.(md|mdx)$/, '');
-      const fullPath = path.join(postsDirectory, fileName);
+  const posts: Post[] = [];
+  const slugCount: Record<string, number> = {};
+
+  function walk(dir: string, relDir: string) {
+    const entries = fs
+      .readdirSync(dir, { withFileTypes: true })
+      .filter((e) => !e.name.startsWith('.') && !e.name.startsWith('_'));
+    const mdFiles = entries.filter(
+      (e) => e.isFile() && /(\.mdx?|\.MDX?)$/.test(e.name)
+    );
+    const subdirs = entries.filter((e) => e.isDirectory());
+
+    const count = mdFiles.length;
+    const relSegments = relDir
+      ? relDir.split(path.sep).map((s) => normalizeSegment(s))
+      : [];
+
+    for (const file of mdFiles) {
+      const fullPath = path.join(dir, file.name);
       const fileContents = fs.readFileSync(fullPath, 'utf8');
       const { data, content } = matter(fileContents);
-      const isMdx = fileName.endsWith('.mdx');
+      const isMdx = file.name.toLowerCase().endsWith('.mdx');
+      const source = path
+        .relative(postsDirectory, fullPath)
+        .replace(/\.[^/.]+$/, '')
+        .split(path.sep)
+        .join('/');
+      const stem = path.basename(file.name, path.extname(file.name));
+
+      let slugSegments: string[];
+      if (!relDir) {
+        slugSegments = [normalizeSegment(stem)];
+      } else if (count === 1) {
+        slugSegments = relSegments;
+      } else {
+        slugSegments = [...relSegments, normalizeSegment(stem)];
+      }
+
+      let slug = slugSegments.join('/');
+      if (slugCount[slug]) {
+        slugCount[slug] += 1;
+        slug += `-${slugCount[slug]}`;
+      } else {
+        slugCount[slug] = 1;
+      }
 
       const thumb = processThumb(data.thumb || '', path.dirname(fullPath));
 
-      return {
+      posts.push({
         slug,
-        title: data.title || slug,
+        source,
+        title: data.title || slugSegments[slugSegments.length - 1] || slug,
         date: data.date || '',
         excerpt: data.excerpt || '',
         thumb,
         content,
         isMdx,
-      };
-    });
+      });
+    }
 
-  return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
+    for (const sub of subdirs) {
+      walk(path.join(dir, sub.name), path.join(relDir, sub.name));
+    }
+  }
+
+  walk(postsDirectory, '');
+
+  return posts.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
 export async function getPostBySlug(slug: string): Promise<Post | null> {
-  try {
-    let fullPath = path.join(postsDirectory, `${slug}.md`);
-    let isMdx = false;
-    
-    if (!fs.existsSync(fullPath)) {
-      fullPath = path.join(postsDirectory, `${slug}.mdx`);
-      isMdx = true;
-      if (!fs.existsSync(fullPath)) {
-        return null;
-      }
-    }
-
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
-    const { data, content } = matter(fileContents);
-    const thumb = processThumb(data.thumb || '', path.dirname(fullPath));
-
-    return {
-      slug,
-      title: data.title || slug,
-      date: data.date || '',
-      excerpt: data.excerpt || '',
-      thumb,
-      content,
-      isMdx,
-    };
-  } catch (error) {
-    return null;
-  }
+  const posts = await getAllPosts();
+  return posts.find((p) => p.slug === slug) || null;
 }
 
