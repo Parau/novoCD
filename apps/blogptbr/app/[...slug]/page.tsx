@@ -6,19 +6,18 @@ import MDXContent from '@/components/MDXContent';
 
 interface PostPageProps {
   params: {
-    slug: string;
+    slug: string[];
   };
 }
 
 export async function generateStaticParams() {
   const posts = await getAllPosts();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  return posts.map((post) => ({ slug: post.slug.split('/') }));
 }
 
 export async function generateMetadata({ params }: PostPageProps) {
-  const post = await getPostBySlug(params.slug);
+  const slug = params.slug.join('/');
+  const post = await getPostBySlug(slug);
   
   if (!post) {
     return {
@@ -33,7 +32,8 @@ export async function generateMetadata({ params }: PostPageProps) {
 }
 
 export default async function PostPage({ params }: PostPageProps) {
-  const post = await getPostBySlug(params.slug);
+  const slug = params.slug.join('/');
+  const post = await getPostBySlug(slug);
 
   if (!post) {
     notFound();
@@ -49,7 +49,7 @@ export default async function PostPage({ params }: PostPageProps) {
         <Title order={1} mb="sm">{post.title}</Title>
         <Text size="sm" c="dimmed" mb="xl">{post.date}</Text>
         
-        <MDXContent slug={params.slug} isMdx={post.isMdx} />
+        <MDXContent source={post.source} isMdx={post.isMdx} />
       </Paper>
     </Container>
   );
